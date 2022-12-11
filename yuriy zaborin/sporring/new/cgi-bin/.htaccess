@@ -1,0 +1,8 @@
+Options -Indexes +ExecCGI
+AddHandler cgi-script .py
+DirectoryIndex /home/admin/web/bubumooran.beget.app/cgi-bin/ hello.py
+
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !/hello.py
+RewriteRule ^(.*)$ /hello.py/$1 [L]

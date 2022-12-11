@@ -1,0 +1,141 @@
+.main {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px 0;
+}
+.main .main__body {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.main .main__body .main__href {
+  position: absolute;
+  left: 80px;
+  top: 10px;
+}
+.main .main__body .main__row-1 {
+  padding: 0 80px;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+.main .main__body .main__row-1 .main__post {
+  width: 660px;
+}
+.main .main__body .main__row-1 .main__post .main__title {
+  margin: 20px 0;
+}
+.main .main__body .main__row-1 .main__post .main__title h1 {
+  font-weight: 900;
+  color: rgba(5, 1, 22, 0.901);
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+.main .main__body .main__row-1 .main__post .main__title span {
+  font-size: 18px;
+  line-height: 1.56;
+}
+.main .main__body .main__row-1 .main__post .main__title p {
+  font-size: 18px;
+  line-height: 1.56;
+  margin: 20px 0;
+}
+.main .main__body .main__row-1 .main__post .main__title b {
+  font-size: 18px;
+  line-height: 1.56;
+  font-weight: normal;
+  background-color: rgba(255, 255, 0, 0.775);
+}
+.main .main__body .main__row-1 .main__post .main__text h2 {
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+.main .main__body .main__row-1 .main__post .main__text ul {
+  padding: 0;
+  margin-left: 30px;
+}
+.main .main__body .main__row-1 .main__post .main__text ul li {
+  font-size: 18px;
+  line-height: 1.56;
+}
+.main .main__body .main__row-1 .main__post .main__text ul li b {
+  font-size: 18px;
+  line-height: 1.56;
+}
+.main .main__body .main__row-1 .main__post .main__text ul .li-item::marker {
+  color: rgb(5, 5, 174);
+}
+.main .main__body .main__row-1 .main__post .main__contact {
+  margin: 20px 0;
+}
+.main .main__body .main__row-1 .main__post .main__image a {
+  margin: 0 5px;
+}
+.main .main__body .main__row-1 .main__form {
+  align-items: center;
+  max-width: 1040px;
+  box-shadow: 0 0.5rem 1.5rem rgba(22, 28, 45, 0.1) !important;
+  border-radius: 5px;
+  background-color: #fad776 !important;
+  height: 437px;
+  display: flex;
+  padding: 3rem !important;
+}
+.main .main__body .main__row-1 .main__form .main__text {
+  margin-right: 50px;
+}
+.main .main__body .main__row-1 .main__form .main__text h1 {
+  font-weight: 900;
+  color: rgb(9, 4, 32);
+  margin: 0;
+  padding: 0;
+  font-size: 35px;
+  margin-bottom: 40px;
+}
+.main .main__body .main__row-1 .main__form .main__text ul {
+  margin-left: 20px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.main .main__body .main__row-1 .main__form .main__text ul li {
+  margin-bottom: 30px;
+  list-style-type: circle;
+}
+.main .main__body .main__row-1 .main__form .main__input {
+  width: 287px;
+}
+.main .main__body .main__row-1 .main__form .main__input form {
+  width: 100%;
+}
+.main .main__body .main__row-1 .main__form .main__input form input {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.235);
+}
+.main .main__body .main__row-1 .main__form .main__input form .form-group {
+  margin-bottom: 15px;
+}
+.main .main__body .main__row-1 .main__form .main__input form label {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+.main .main__body .main__row-1 .main__form .main__input form .selectForm {
+  display: flex;
+  flex-direction: column;
+}
+.main .main__body .main__row-1 .main__form .main__input form .selectForm .row-select {
+  display: flex;
+  flex-direction: row;
+}
+.main .main__body .main__row-1 .main__form .main__input form .selectForm select {
+  width: 91px;
+  height: 53px;
+  margin-left: 3px;
+}
+.main .main__body .main__row-1 .main__form .main__input form button {
+  width: 100%;
+}/*# sourceMappingURL=container.css.map */

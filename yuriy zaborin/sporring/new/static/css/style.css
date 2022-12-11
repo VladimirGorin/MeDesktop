@@ -1,0 +1,369 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 100%;
+    background-color: #141414;
+}
+
+a{
+    transition-duration: 0.2s;
+    transition-property: color;
+    transition-timing-function: linear;
+    color: #aaaaaa;
+    text-decoration: none;
+}
+
+body h5{
+    color: #aaaaaa !important;
+}
+
+h3{
+    color: #aaaaaa;
+    font-family: 'Exo 2', sans-serif;
+}
+
+svg{
+    margin-right: 10px !important;
+    color: #aaa;
+}
+
+.m{
+    position: fixed;
+    visibility: hidden;
+}
+
+.c{
+    width: 100%;
+    position: fixed;
+    border-bottom: 1px solid #8a96a3;
+}
+
+.error{
+    text-align: center;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+}
+
+a:hover{
+    color: #6700ed;
+}
+
+header{
+    width: 100%;
+    height: auto;
+    font-size: 100%;
+    border-bottom: 1px solid #141414;
+}
+
+.header{
+    width: 100%;
+}
+
+.header ul li{
+    display: inline-block;
+}
+
+.header a{
+    transition-duration: 0.3s;
+    transition-property: background-color color;
+    transition-timing-function: linear;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 20px;
+    margin-left: 100px;
+    display:flex;
+    align-items:center;
+}
+
+.header a:hover{
+    color: #6700ed;
+    background-color: rgba(48, 31, 71, 0.4);
+}
+
+.header a:active{
+    color: #6700ed;
+    background-color: rgba(48, 31, 71, 0.4);
+}
+
+.eye-catching a{
+    background-color: #6300e5;
+    color: #fff !important;
+    transition-duration: 0.1s;
+    transition-property: background-color;
+    transition-timing-function: linear;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 20px;
+
+}
+
+.eye-catching a:hover{
+    background-color: #5202ba !important;
+    
+}
+
+.container{
+    width: 100%;
+    margin: 0  auto;
+    margin-top: 65px;
+}
+
+.form{
+    width: 600px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+input{
+    font-family: 'Exo 2', sans-serif;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    line-height: 20px;
+    background-color: #141414;
+    border: 1px solid #8a96a3;
+    color: #fff;
+    transition-duration: .3s;
+    transition-timing-function: linear;
+    transition-property: border-color background-color color;
+}
+
+input:focus{
+    border-color: #6300e5;
+    -webkit-border-color: #6300e5;
+    color: #fff;
+}
+
+input[type=submit]{
+    border-color: #141414;
+    color: #fff;
+    background-color: #6300e5;
+    margin-top: 10px;
+}
+
+input[type=submit]:hover{
+    border-color: #141414;
+    background-color: #5202ba;
+    cursor: pointer; 
+}
+
+form input{
+    display: block;
+    margin-top: 2%;
+}
+
+.form a{
+    display: inline;
+    margin-right: 20px;
+}
+
+.btn{
+    width: 66%;
+    height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    color: #fff;
+    margin: 0 auto;
+    display:flex;
+    align-items:center;
+    transition-duration: .2s;
+    transition-property: all;
+    transition-timing-function: linear;
+    background-color: #6300e5;
+}
+
+.btn:hover{
+    background-color: #5202ba;
+    color: #fff;
+}
+
+.btn svg{
+    width: 10%;
+    margin-left: 25%;
+    margin-bottom: 0.7%;
+}
+
+.container-home{
+    width: 100%;
+    display: flex;
+}
+
+.circle{
+    background-color: #eb0400;
+    border-radius: 9000px;
+    width: 0.8rem;
+    height: 0.8rem;
+    display: inline-block;
+    position: relative;
+}
+
+.left-cont{
+    text-align: center;
+    width: 300px;
+    background-color: #101010;
+    height: 100%;
+    position: fixed;
+}
+
+.block-profile{
+    width: 100%;
+    height: 4.2rem;
+    margin-bottom: 1% !important;
+}
+.block-profile:hover{
+    color: #aaaaaa
+}
+.block-profile:hover .block-profile-ul{
+    background-color: #181818 !important;
+}
+.block-profile-ul{
+    padding: 0 !important;
+}
+.block-profile-content ul li{
+    display: inline-block;
+    vertical-align: middle;
+}
+.block-profile-name{
+    margin-right: 10%;
+    margin-left: 5%;
+}
+.block-profile-content img{
+    width: 40px;
+    height: 40px;
+    border-radius: 1000px;
+}
+.block-profile-circle{
+    margin-left: 50px;
+}
+.middle-cont{
+    width: 90% !important;
+    margin: 0 auto !important;
+    margin-left: 300px !important;
+    margin-right: 300px !important;
+    
+}
+.create-room-block{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 5%;
+    color: #8a96a3;
+    text-align: center;
+}
+.instruction-img{
+    margin-top: 2%;
+    transition-duration: .3s;
+    transition-property: all;
+    transition-timing-function: linear;
+}
+.instruction-img:hover{
+    color: #5202ba;
+}
+.description-room{
+    width: 260px;
+    margin: 0 auto;
+}
+.login-block{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 5%;
+}
+.login-block .btn{
+    width: 500px !important;
+    display: block !important;
+    margin-top: 1%;
+}
+.right-cont{
+    position: fixed;
+    right: 0;
+    width: 300px;
+    margin-right: 0%;
+    text-align: center;
+    height: 100%;
+    background-color: #101010;
+}
+.message-box{
+    width: 90%;
+    margin: 0 auto;
+    height: 650px;
+    background-color: #141414;
+    border: 1px solid #525353;
+    overflow: scroll;
+}
+#messages{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.message-box ul li{
+    list-style: none;
+}
+.msg-body{
+    width: 100%;
+    text-align: left !important;
+    margin-top: 2px;
+    margin-left: 2px;
+    color: #fff;
+}
+.msg-author{
+    color: #5202ba;
+}
+.message-box::-webkit-scrollbar{
+    width: 0;
+}
+.chat-btns{
+    width: 280px;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 100px !important;
+    margin-left: 10px;
+}
+.block-middle{
+    width: 60%;
+    margin: 0 auto;
+}
+.block-middle p{
+    color: #fff;
+    text-align: left;
+}
+.block-middle svg{
+    text-align: left;
+}
+.block-middle input[type=file]{
+    border: none;
+    color: #fff;
+}
+.block-middle label{
+    cursor: pointer;
+    width: 100%;
+    transition-duration: .3s;
+    transition-property: all;
+    transition-timing-function: linear;
+}
+.fight-block{
+    width: 100%;
+}
+.middle-inner{
+    display: inline-flex;
+    width: 100%;
+}
+.fight-first-person{
+    width: 50%;
+}
+.fight-second-person{
+    width: 50%;
+}
+.fight-block-icons ul li{
+    display: inline;
+}

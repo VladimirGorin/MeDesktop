@@ -1,0 +1,16 @@
+@import '~sanitize.css';
+@import './core.css';
+@import './common/styles/theme.css';
+@import './common/styles/homeSlider.css';
+@import './common/styles/checkout.css';
+@import './common/styles/checkbox.css';
+@import './common/styles/cart.css';
+@import './common/styles/header.css';
+@import './common/styles/footer.css';
+@import './common/styles/category.css';
+@import './common/styles/product.css';
+@import './common/styles/page.css';
+@import './common/styles/custom.css';
+@import './common/styles/login.css';
+@import './common/styles/account.css';
+@import './common/styles/mining.css';

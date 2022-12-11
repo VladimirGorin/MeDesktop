@@ -1,0 +1,93 @@
+.main {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #efecec;
+}
+.main .main__body {
+  margin: 20px 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.main .main__body .main__href {
+  position: absolute;
+  left: 90px;
+  top: 20px;
+}
+.main .main__body .main__row-1 {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main .main__body .main__row-1 .main__title {
+  text-align: center;
+}
+.main .main__body .main__row-1 .main__title h1 {
+  font-weight: 900;
+  color: rgb(5, 1, 22);
+  margin: 0;
+  padding: 0;
+}
+.main .main__body .main__row-1 .main__posts {
+  margin: 40px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.main .main__body .main__row-1 .main__posts .main__post {
+  position: relative;
+  width: 29%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+}
+.main .main__body .main__row-1 .main__posts .main__post a {
+  text-decoration: none;
+  color: black;
+}
+.main .main__body .main__row-1 .main__posts .main__post .main__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+.main .main__body .main__row-1 .main__posts .main__post .main__img .main__image {
+  width: 100%;
+}
+.main .main__body .main__row-1 .main__posts .main__post .main__img .main__image img {
+  width: 100%;
+  border-top-left-radius: calc(0.375rem - 0px);
+  border-top-right-radius: calc(0.375rem - 0px);
+  border-bottom-left-radius: calc(0.375rem - 0px);
+  border-bottom-right-radius: calc(0.375rem - 0px);
+}
+.main .main__body .main__row-1 .main__posts .main__post .main__border {
+  position: relative;
+  left: 0;
+  z-index: 999;
+  bottom: 40px;
+}
+.main .main__body .main__row-1 .main__posts .main__post .main__border svg {
+  color: white;
+}
+.main .main__body .main__row-1 .main__posts .main__post .main__text {
+  box-shadow: 0 1.5rem 4rem rgba(22, 28, 45, 0.05) !important;
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.main .main__body .main__row-1 .main__posts .main__post .main__text span {
+  font-size: 1.3125rem;
+  font-weight: 700;
+}/*# sourceMappingURL=container.css.map */

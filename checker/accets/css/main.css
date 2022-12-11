@@ -1,0 +1,24 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+
+}
+
+.form-check-input{
+    margin: 10px 0;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}

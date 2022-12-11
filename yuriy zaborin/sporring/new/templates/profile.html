@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{company_name}} | {{page_type}}</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="{{ url_for( 'static', filename='css/style.css', v=1)}}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for( 'static', filename='css/adaptifve.css', v=1)}}">
+    
+    </head>
+<body>
+    <div class="main">
+        <header>
+            <div class="m">
+                <div class="header">
+                    <ul>
+                        <li class="itm">
+                            <a href="/">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-house" viewBox="0 0 16 17">
+                                    <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                                    <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                                </svg>
+                            </a>
+                        </li>
+                        
+                        <li class="itm">
+                            <a href="/profile">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="itm">
+                            <a href="/susbcriptions">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-heart" viewBox="0 0 16 16">
+                                    <path d="M9 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm-9 8c0 1 1 1 1 1h10s1 0 1-1-1-4-6-4-6 3-6 4Zm13.5-8.09c1.387-1.425 4.855 1.07 0 4.277-4.854-3.207-1.387-5.702 0-4.276Z"/>
+                                </svg>
+                            </a>
+                        </li>
+                        
+                        <li class="eye-catching with-icon">
+                            <a href="/">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+            <div class="c">
+                <div class="header">
+                    <ul>
+                        <li class="itm">
+                            <a href="/">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-house" viewBox="0 0 16 17">
+                                    <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                                    <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                                </svg>Главная
+                            </a>
+                        </li>
+                        
+                        <li class="itm">
+                            <a href="/profile">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                                </svg><strong id="username">{{ user }}</strong>
+                            </a>
+                        </li>
+                        
+                        <li class="eye-catching with-icon">
+                            <a href="/create-room">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+                                </svg>Новый спор
+                            </a>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+
+        </header>
+        <div class="container">
+            <div class="container-home">
+                <div class="left-cont">
+                    <div class="block">
+                        <h3>Сейчас спорят</h3>
+                        {% for fight in fights %}
+                        <a class="block-profile" href="/room/{{fight[0]}}">
+                                <div class="block-profile-content">
+                                    <ul class="block-profile-ul">
+                                        <li class="block-profile-avatar"><img class="user-avatar" src="/static/images/{{fight[0]}}/photos/{{fight[4]}}" alt=""></li>
+                                        <li class="block-profile-name">{{fight[2]}}</li>
+                                    </ul>
+                                </div>
+                        </a>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="middle-cont">
+                    {% if user %}
+                        <div class="create-room-block">
+                            <h3>Создание комнаты</h3>
+                            <div class="instruction-img">
+                                <a href="/create-room">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-bookmark-plus" viewBox="0 0 16 16">
+                                        <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+                                        <path d="M8 4a.5.5 0 0 1 .5.5V6H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V7H6a.5.5 0 0 1 0-1h1.5V4.5A.5.5 0 0 1 8 4z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="description-room">
+                                {% for descr in description_room %}
+                                    <p>{{descr}}</p>
+                                    <br>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    {% else %}
+                    <div class="login-block">
+                        <h3>Вы не авторизованы</h3>
+                        <a href="/login" class="btn">Войти</a>
+                        <a href="/registration" class="btn">Регистрация</a>
+                    </div>
+                    {% endif %}
+                </div>
+                <div class="right-cont">
+                    <div class="general-chat">
+                        <h3>Общий чат</h3>
+                        <div class="message-box">
+                            <ul id="messages">
+                                
+                            </ul>
+                        </div>
+                        <div class="chat-btns">
+                            <form action="" id="form_send_msg">
+                                {% if user is not none %}
+                                    <input type="text" id="message_input" name="message_text" placeholder="Отправить сообщение">
+                                    <input type="submit" id="send_msg" value="Отправить">
+                                {% else %}
+                                    <a href="/login">Авторизоваться</a>
+                                {% endif %}
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+                {% if user is not none %}
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js" integrity="sha256-bQmrZe4yPnQrLTY+1gYylfNMBuGfnT/HKsCGX+9Xuqo=" crossorigin="anonymous"></script>
+
+                    <script>
+                        $(document).ready(() => {
+                            $('#form_send_msg').on('submit', (e) => {
+                                e.preventDefault();
+                            });
+
+                            const socket = io.connect('http://127.0.0.1:5000');
+                            const username = '{{user}}';
+                            const chatId = '{{ chatId }}';
+
+                            $('#send_msg').on('click', () => {
+                                socket.send({
+                                        'msg': $('#message_input').val(),
+                                        'username': username,
+                                        'chatId': chatId
+                                    });
+                                $('#message_input').val('');
+                            });
+
+                            socket.on('message', data => {
+                                if (data.type == "msg" && data.data.msg.length > 0) {
+                                    if (data.data.username === 'Service message') {
+                                        $('#messages').append(`<li class="text-muted"><strong>${data.data.username}:</strong> ${data.data.msg}</li>`);
+                                    } else {
+                                        $('#messages').append(`<li class="msg-body"><strong class="msg-author">${data.data.username}:</strong> ${data.data.msg}</li>`);
+                                    }
+                                }
+                            });
+                        });
+                    </script>
+                {% else %}
+                
+                    <script>
+                        $(document).ready(() => {
+
+                            const socket = io.connect('http://127.0.0.1:5000');
+
+                            $('#send_msg').on('click', () => {
+                                socket.send({
+                                        'msg': $('#message_input').val(),
+                                        'username': username,
+                                        'chatId': chatId
+                                    });
+                                $('#message_input').val('');
+                            });
+
+                            socket.on('message', data => {
+                                console.log(data);
+                                if (data.msg.length > 0) {
+                                    if (data.username === 'Service message') {
+                                        $('#messages').append(`<li class="text-muted"><strong><a id="msgAuthor">${data.username}</a>:</strong> ${data.msg}</li>`);
+                                    } else {
+                                        $('#messages').append(`<li><strong><a id="msgAuthor">${data.username}</a>:</strong> ${data.msg}</li>`);
+                                    }
+                                }
+                            });
+                        });
+                    </script>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</body>
+</html>

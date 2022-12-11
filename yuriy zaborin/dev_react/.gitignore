@@ -1,0 +1,6 @@
+/build/
+/nbproject/
+/node_modules/
+/build_git_data/
+package-lock.json
+yarn.lock

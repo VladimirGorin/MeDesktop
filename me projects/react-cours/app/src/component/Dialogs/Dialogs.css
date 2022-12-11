@@ -1,0 +1,91 @@
+
+
+.dialogs{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.dialogs__chat{
+    position: relative;
+    border: 1px solid rgb(109, 109, 109);
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    width: 100%;
+}
+
+.dialogs__users{
+    display: flex;
+    flex-direction: column;
+}
+
+.dialogs__users .dialogs__item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.dialogs__info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.dialogs__chat .dialogs__item{
+    flex-direction: column;
+    display: flex;
+    margin: 20px 30px;
+    width: 45%;
+
+}
+
+.dialogs__text{
+    margin-top: 20px;
+}
+
+
+.dialogs__chat .dialogs__item img{
+    width: 50px;
+    height: 50px;   
+    margin-right: 10px;
+}
+
+.dialogs__users .dialogs__item a{
+    font-size: 25px;
+    font-weight: 600;
+    margin: 10px 0 0 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    
+}
+
+.dialogs__create{
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 99.8%;
+    height: 20px;
+
+}
+
+.dialogs__create input{
+    width: 100%;
+    font-size: 19px;
+    height: 50px;
+} 
+
+
+
+.dialogs__create button{
+    width: 100%;
+    font-size: 19px;
+    height: 50px;
+}   
+

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./accets/css/header/header.css">
+    <link rel="stylesheet" href="./accets/css/neyws/container.css">
+    <link rel="stylesheet" href="./accets/css/footer/footer.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+            <div id="navbar" class="header__pannel">
+                <div class="header__body">
+                    <div class="header__logo">
+                        <a href="./index.html">Школа фреймнига</a>
+                    </div>
+                    <div onclick="openMenu()" class="header__burger">
+                        <span></span>
+                    </div>
+                    <div class="header__navigation">
+                        <ul>
+                            <li><a href="#">Продать</a></li>
+                            <li><a href="#">Купить</a></li>
+                            <li><a href="./neyws.html">Новостройки</a></li>
+                            <li><a href="./articles.html">Блог</a></li>
+                            <li><a href="./chat/index.html">Чат</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="header__task">
+                        <div class="header__tel">
+                            <span><img
+                                    src="https://thumb.tildacdn.com/tild6633-3933-4631-a433-633530376664/-/format/webp/phone_icon.png"
+                                    alt=""> <a class="tn-atom" href="tel:+74993704149">+ 7 499 370 41 49</a></span>
+                        </div>
+                        <!-- <div class="header__button">
+                            <button class="hover">Купить онлайн</button>
+                        </div> -->
+                    </div>
+
+                </div>
+            </div>
+            <div id="mobilePopup" class="header__mobileMenu">
+                <div class="header__pannel">
+                    <div class="header__body">
+                        <div class="header__logo">
+                            <a href="./index.html">Школа фреймнига</a>
+                        </div>
+                        <div onclick="closeMenu()" class="header__burgerM">
+                            <span></span>
+                        </div>
+                        <div class="header__task">
+                            <div class="header__tel">
+                                <span><img
+                                        src="https://thumb.tildacdn.com/tild6633-3933-4631-a433-633530376664/-/format/webp/phone_icon.png"
+                                        alt=""> <a class="tn-atom" href="tel:+74993704149">+ 7 499 370 41 49</a></span>
+                            </div>
+                            <!-- <div class="header__button">
+                                <button class="hover">Купить онлайн</button>
+                            </div> -->
+                        </div>
+
+                    </div>
+                    <div class="header__navigationM">
+                        <ul>
+                            <li><a href="#">Продать</a></li>
+                            <li><a href="#">Купить</a></li>
+                            <li><a href="./neyws.html">Новостройки</a></li>
+                            <li><a href="./articles.html">Блог</a></li>
+                            <li><a href="./chat/index.html">Чат</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <!-- <div class="header__content">
+                <div class="header__bloceter"></div>
+                <div class="header__text">
+                    <h1>Недвижимость</h1> <br>
+                    <h2>в московском ритме</h2>
+                </div>
+            </div> -->
+        </header>
+        <div class="main">
+            <div class="main__body">
+                <div class="main__row1">
+                    <div class="main__title">
+                        <h1>Найдено 148 ЖК</h1>
+                    </div>
+                    <div class="main__navigation">
+                        <button id="button__list" class="form-control"><svg _ngcontent-wkg-c78="" width="16" height="16"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path _ngcontent-wkg-c78="" fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1 0a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1H1Zm5 2a1 1 0 0 1 1-1h8a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1Zm1 5a1 1 0 1 0 0 2h8a1 1 0 1 0 0-2H7Zm-1 7a1 1 0 0 1 1-1h8a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1ZM0 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V7Zm1 5a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1H1Z"
+                                    fill="currentColor"></path>
+                            </svg> Списком</button>
+                        <button id="button__cart" class="form-control"><svg _ngcontent-wkg-c78="" width="20" height="20"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path _ngcontent-wkg-c78="" fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M13 9a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm-1.5 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"
+                                    fill="currentColor"></path>
+                                <path _ngcontent-wkg-c78="" fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M17 9c0 4.5-7 9-7 9s-7-4.5-7-9a7 7 0 0 1 14 0Zm-1.5 0c0 .742-.293 1.59-.867 2.512-.569.913-1.35 1.802-2.174 2.596A24.442 24.442 0 0 1 10 16.17a24.446 24.446 0 0 1-2.459-2.063c-.823-.793-1.605-1.682-2.174-2.595C4.793 10.59 4.5 9.742 4.5 9a5.5 5.5 0 1 1 11 0Z"
+                                    fill="currentColor"></path>
+                            </svg> На карте</button>
+                    </div>
+                </div>
+                <div class="main__row2">
+                    <!-- <a href="./cart-info.html">
+
+                    </a> -->
+                    <div class="main__element">
+                        <div class="main__logo">
+                            <img src="https://img3.nmarket.pro/photo/pid/92c16e60-fd16-48ae-b025-4b20e116d9ad?type=jpg&v=2&wpsid=9"
+                                alt="logo">
+                        </div>
+                        <div class="main__allInfo">
+                            <div class="main__one">
+                                <div class="main__title">
+                                    <h1>ЖК «SHINE»</h1>
+                                </div>
+                                <div class="main__text-1">
+                                    <h1>М Новочеркасская <svg _ngcontent-wkg-c83="" viewBox="0 0 14 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg" class="ng-star-inserted">
+                                            <path _ngcontent-wkg-c83="" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M9.62506 2.1875C9.62506 2.91237 9.03744 3.5 8.31256 3.5C7.58769 3.5 7.00006 2.91237 7.00006 2.1875C7.00006 1.46263 7.58769 0.875 8.31256 0.875C9.03744 0.875 9.62506 1.46263 9.62506 2.1875ZM9.19937 12.1004C9.28293 12.4115 9.09845 12.7315 8.78731 12.8151C8.47617 12.8986 8.1562 12.7142 8.07263 12.403L7.47339 10.1719C7.44142 10.0529 7.37258 9.94705 7.27673 9.86958L6.84393 9.51973L5.5955 8.49687C5.52206 8.41188 5.46691 8.33253 5.43007 8.25885C5.17687 7.75245 5.54903 6.29606 5.65161 5.92067L5.54425 5.97009C5.43307 6.02126 5.34081 6.1061 5.28051 6.2126L4.55908 7.48694C4.40037 7.7673 4.04443 7.86591 3.76407 7.70719C3.48371 7.54848 3.38511 7.19254 3.54382 6.91218L4.35799 5.47403C4.47857 5.26102 4.6631 5.09134 4.88545 4.989L6.63848 4.18212C6.66753 4.16875 6.69711 4.15797 6.72697 4.14968C6.83395 4.1073 6.95083 4.0833 7.07835 4.0833C8.16486 4.0833 8.16588 4.73536 8.16668 5.24739L8.16669 5.24996C8.16678 5.307 8.1615 5.38136 8.15205 5.46882L9.15508 6.46117C9.22642 6.53175 9.31477 6.58273 9.41157 6.60919L10.6768 6.95494C10.9876 7.03987 11.1707 7.36064 11.0857 7.67142C11.0008 7.98219 10.68 8.16527 10.3693 8.08035L8.95636 7.69424C8.76275 7.64133 8.58606 7.53936 8.44338 7.3982L7.91496 6.87541L7.89268 6.99229C7.80731 7.43999 7.73507 7.81883 7.73507 7.91974C7.73507 8.05087 8.18984 8.86178 8.3743 9.1853C8.42495 9.27413 8.46412 9.36837 8.49069 9.46711L9.19937 12.1004ZM6.27013 10.5491C6.32336 10.4664 6.36585 10.3775 6.3967 10.2845L5.39247 9.4617L5.30783 9.83443C5.29254 9.90186 5.26538 9.96604 5.22763 10.024C4.75469 10.7495 4.32581 11.378 3.94097 11.9096C3.75206 12.1706 3.81047 12.5353 4.07143 12.7242C4.33239 12.9131 4.69709 12.8547 4.88601 12.5938C5.29169 12.0334 5.75307 11.3518 6.27013 10.5491Z"
+                                                fill="currentColor"></path>
+                                        </svg> 8 мин.</h1>
+                                    <span>г. Санкт-Петербург, Таллинская ул., д. <br> 11, литера А</span>
+                                    <a href="#">Показать на карте</a>
+                                </div>
+                            </div>
+                            <div class="main__too">
+                                <div class="main__text-2">
+                                    <p><b>Сдача:</b> 2 кв. 2022 - 2 кв. 2022</p>
+                                    <span><b>Застройщик:</b> УК Хуа-Жэнь Инвест</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="main__info">
+                            <p>Студия <span>----------------------</span> от 589,8 млн ₽</p>
+                            <span>1-комн <span>--------------------------</span> от 8,5 млн ₽</span>
+                            <button class="form-control"><svg _ngcontent-wkg-c87="" width="17" height="16"
+                                    viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    class="catalog-header__svg">
+                                    <path _ngcontent-wkg-c87="" fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M9.16667 14.6667H1.83333V4.66667H9.16667H10.5H15.1667V14.6667L10.5 14.6667L10.5 9.33333H9.16667V14.6667ZM9.16667 16H0.5V4.66667V3.33333V0H1.83333H9.16667H9.5H10.5V3.33333H16.5V16H13.1667V14.6667H10.5V16H9.16667ZM9.16667 1.33333V3.33333H1.83333V1.33333H9.16667Z"
+                                        fill="#08090A"></path>
+                                </svg><a href="./cart-info.html">3 планировки в ЖК</a></button>
+                        </div>
+                    </div>
+                    <div class="main__element">
+                        <div class="main__logo">
+                            <img src="https://img3.nmarket.pro/photo/pid/92c16e60-fd16-48ae-b025-4b20e116d9ad?type=jpg&v=2&wpsid=9"
+                                alt="logo">
+                        </div>
+                        <div class="main__allInfo">
+                            <div class="main__one">
+                                <div class="main__title">
+                                    <h1>ЖК «SHINE»</h1>
+                                </div>
+                                <div class="main__text-1">
+                                    <h1>М Новочеркасская <svg _ngcontent-wkg-c83="" viewBox="0 0 14 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg" class="ng-star-inserted">
+                                            <path _ngcontent-wkg-c83="" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M9.62506 2.1875C9.62506 2.91237 9.03744 3.5 8.31256 3.5C7.58769 3.5 7.00006 2.91237 7.00006 2.1875C7.00006 1.46263 7.58769 0.875 8.31256 0.875C9.03744 0.875 9.62506 1.46263 9.62506 2.1875ZM9.19937 12.1004C9.28293 12.4115 9.09845 12.7315 8.78731 12.8151C8.47617 12.8986 8.1562 12.7142 8.07263 12.403L7.47339 10.1719C7.44142 10.0529 7.37258 9.94705 7.27673 9.86958L6.84393 9.51973L5.5955 8.49687C5.52206 8.41188 5.46691 8.33253 5.43007 8.25885C5.17687 7.75245 5.54903 6.29606 5.65161 5.92067L5.54425 5.97009C5.43307 6.02126 5.34081 6.1061 5.28051 6.2126L4.55908 7.48694C4.40037 7.7673 4.04443 7.86591 3.76407 7.70719C3.48371 7.54848 3.38511 7.19254 3.54382 6.91218L4.35799 5.47403C4.47857 5.26102 4.6631 5.09134 4.88545 4.989L6.63848 4.18212C6.66753 4.16875 6.69711 4.15797 6.72697 4.14968C6.83395 4.1073 6.95083 4.0833 7.07835 4.0833C8.16486 4.0833 8.16588 4.73536 8.16668 5.24739L8.16669 5.24996C8.16678 5.307 8.1615 5.38136 8.15205 5.46882L9.15508 6.46117C9.22642 6.53175 9.31477 6.58273 9.41157 6.60919L10.6768 6.95494C10.9876 7.03987 11.1707 7.36064 11.0857 7.67142C11.0008 7.98219 10.68 8.16527 10.3693 8.08035L8.95636 7.69424C8.76275 7.64133 8.58606 7.53936 8.44338 7.3982L7.91496 6.87541L7.89268 6.99229C7.80731 7.43999 7.73507 7.81883 7.73507 7.91974C7.73507 8.05087 8.18984 8.86178 8.3743 9.1853C8.42495 9.27413 8.46412 9.36837 8.49069 9.46711L9.19937 12.1004ZM6.27013 10.5491C6.32336 10.4664 6.36585 10.3775 6.3967 10.2845L5.39247 9.4617L5.30783 9.83443C5.29254 9.90186 5.26538 9.96604 5.22763 10.024C4.75469 10.7495 4.32581 11.378 3.94097 11.9096C3.75206 12.1706 3.81047 12.5353 4.07143 12.7242C4.33239 12.9131 4.69709 12.8547 4.88601 12.5938C5.29169 12.0334 5.75307 11.3518 6.27013 10.5491Z"
+                                                fill="currentColor"></path>
+                                        </svg> 8 мин.</h1>
+                                    <span>г. Санкт-Петербург, Таллинская ул., д. <br> 11, литера А</span>
+                                    <a href="#">Показать на карте</a>
+                                </div>
+                            </div>
+                            <div class="main__too">
+                                <div class="main__text-2">
+                                    <p><b>Сдача:</b> 2 кв. 2022 - 2 кв. 2022</p>
+                                    <span><b>Застройщик:</b> УК Хуа-Жэнь Инвест</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="main__info">
+                            <p>Студия <span>----------------------</span> от 589,8 млн ₽</p>
+                            <span>1-комн <span>--------------------------</span> от 8,5 млн ₽</span>
+                            <button class="form-control"><svg _ngcontent-wkg-c87="" width="17" height="16"
+                                    viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    class="catalog-header__svg">
+                                    <path _ngcontent-wkg-c87="" fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M9.16667 14.6667H1.83333V4.66667H9.16667H10.5H15.1667V14.6667L10.5 14.6667L10.5 9.33333H9.16667V14.6667ZM9.16667 16H0.5V4.66667V3.33333V0H1.83333H9.16667H9.5H10.5V3.33333H16.5V16H13.1667V14.6667H10.5V16H9.16667ZM9.16667 1.33333V3.33333H1.83333V1.33333H9.16667Z"
+                                        fill="#08090A"></path>
+                                </svg><a href="./cart-info.html">3 планировки в ЖК</a></button>
+                        </div>
+                    </div>
+                    <div class="main__element">
+                        <div class="main__logo">
+                            <img src="https://img3.nmarket.pro/photo/pid/92c16e60-fd16-48ae-b025-4b20e116d9ad?type=jpg&v=2&wpsid=9"
+                                alt="logo">
+                        </div>
+                        <div class="main__allInfo">
+                            <div class="main__one">
+                                <div class="main__title">
+                                    <h1>ЖК «SHINE»</h1>
+                                </div>
+                                <div class="main__text-1">
+                                    <h1>М Новочеркасская <svg _ngcontent-wkg-c83="" viewBox="0 0 14 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg" class="ng-star-inserted">
+                                            <path _ngcontent-wkg-c83="" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M9.62506 2.1875C9.62506 2.91237 9.03744 3.5 8.31256 3.5C7.58769 3.5 7.00006 2.91237 7.00006 2.1875C7.00006 1.46263 7.58769 0.875 8.31256 0.875C9.03744 0.875 9.62506 1.46263 9.62506 2.1875ZM9.19937 12.1004C9.28293 12.4115 9.09845 12.7315 8.78731 12.8151C8.47617 12.8986 8.1562 12.7142 8.07263 12.403L7.47339 10.1719C7.44142 10.0529 7.37258 9.94705 7.27673 9.86958L6.84393 9.51973L5.5955 8.49687C5.52206 8.41188 5.46691 8.33253 5.43007 8.25885C5.17687 7.75245 5.54903 6.29606 5.65161 5.92067L5.54425 5.97009C5.43307 6.02126 5.34081 6.1061 5.28051 6.2126L4.55908 7.48694C4.40037 7.7673 4.04443 7.86591 3.76407 7.70719C3.48371 7.54848 3.38511 7.19254 3.54382 6.91218L4.35799 5.47403C4.47857 5.26102 4.6631 5.09134 4.88545 4.989L6.63848 4.18212C6.66753 4.16875 6.69711 4.15797 6.72697 4.14968C6.83395 4.1073 6.95083 4.0833 7.07835 4.0833C8.16486 4.0833 8.16588 4.73536 8.16668 5.24739L8.16669 5.24996C8.16678 5.307 8.1615 5.38136 8.15205 5.46882L9.15508 6.46117C9.22642 6.53175 9.31477 6.58273 9.41157 6.60919L10.6768 6.95494C10.9876 7.03987 11.1707 7.36064 11.0857 7.67142C11.0008 7.98219 10.68 8.16527 10.3693 8.08035L8.95636 7.69424C8.76275 7.64133 8.58606 7.53936 8.44338 7.3982L7.91496 6.87541L7.89268 6.99229C7.80731 7.43999 7.73507 7.81883 7.73507 7.91974C7.73507 8.05087 8.18984 8.86178 8.3743 9.1853C8.42495 9.27413 8.46412 9.36837 8.49069 9.46711L9.19937 12.1004ZM6.27013 10.5491C6.32336 10.4664 6.36585 10.3775 6.3967 10.2845L5.39247 9.4617L5.30783 9.83443C5.29254 9.90186 5.26538 9.96604 5.22763 10.024C4.75469 10.7495 4.32581 11.378 3.94097 11.9096C3.75206 12.1706 3.81047 12.5353 4.07143 12.7242C4.33239 12.9131 4.69709 12.8547 4.88601 12.5938C5.29169 12.0334 5.75307 11.3518 6.27013 10.5491Z"
+                                                fill="currentColor"></path>
+                                        </svg> 8 мин.</h1>
+                                    <span>г. Санкт-Петербург, Таллинская ул., д. <br> 11, литера А</span>
+                                    <a href="#">Показать на карте</a>
+                                </div>
+                            </div>
+                            <div class="main__too">
+                                <div class="main__text-2">
+                                    <p><b>Сдача:</b> 2 кв. 2022 - 2 кв. 2022</p>
+                                    <span><b>Застройщик:</b> УК Хуа-Жэнь Инвест</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="main__info">
+                            <p>Студия <span>----------------------</span> от 589,8 млн ₽</p>
+                            <span>1-комн <span>--------------------------</span> от 8,5 млн ₽</span>
+                            <button class="form-control"><svg _ngcontent-wkg-c87="" width="17" height="16"
+                                    viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    class="catalog-header__svg">
+                                    <path _ngcontent-wkg-c87="" fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M9.16667 14.6667H1.83333V4.66667H9.16667H10.5H15.1667V14.6667L10.5 14.6667L10.5 9.33333H9.16667V14.6667ZM9.16667 16H0.5V4.66667V3.33333V0H1.83333H9.16667H9.5H10.5V3.33333H16.5V16H13.1667V14.6667H10.5V16H9.16667ZM9.16667 1.33333V3.33333H1.83333V1.33333H9.16667Z"
+                                        fill="#08090A"></path>
+                                </svg><a href="./cart-info.html">3 планировки в ЖК</a></button>
+                        </div>
+                    </div>
+                    <div class="main__element">
+                        <div class="main__logo">
+                            <img src="https://img3.nmarket.pro/photo/pid/92c16e60-fd16-48ae-b025-4b20e116d9ad?type=jpg&v=2&wpsid=9"
+                                alt="logo">
+                        </div>
+                        <div class="main__allInfo">
+                            <div class="main__one">
+                                <div class="main__title">
+                                    <h1>ЖК «SHINE»</h1>
+                                </div>
+                                <div class="main__text-1">
+                                    <h1>М Новочеркасская <svg _ngcontent-wkg-c83="" viewBox="0 0 14 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg" class="ng-star-inserted">
+                                            <path _ngcontent-wkg-c83="" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M9.62506 2.1875C9.62506 2.91237 9.03744 3.5 8.31256 3.5C7.58769 3.5 7.00006 2.91237 7.00006 2.1875C7.00006 1.46263 7.58769 0.875 8.31256 0.875C9.03744 0.875 9.62506 1.46263 9.62506 2.1875ZM9.19937 12.1004C9.28293 12.4115 9.09845 12.7315 8.78731 12.8151C8.47617 12.8986 8.1562 12.7142 8.07263 12.403L7.47339 10.1719C7.44142 10.0529 7.37258 9.94705 7.27673 9.86958L6.84393 9.51973L5.5955 8.49687C5.52206 8.41188 5.46691 8.33253 5.43007 8.25885C5.17687 7.75245 5.54903 6.29606 5.65161 5.92067L5.54425 5.97009C5.43307 6.02126 5.34081 6.1061 5.28051 6.2126L4.55908 7.48694C4.40037 7.7673 4.04443 7.86591 3.76407 7.70719C3.48371 7.54848 3.38511 7.19254 3.54382 6.91218L4.35799 5.47403C4.47857 5.26102 4.6631 5.09134 4.88545 4.989L6.63848 4.18212C6.66753 4.16875 6.69711 4.15797 6.72697 4.14968C6.83395 4.1073 6.95083 4.0833 7.07835 4.0833C8.16486 4.0833 8.16588 4.73536 8.16668 5.24739L8.16669 5.24996C8.16678 5.307 8.1615 5.38136 8.15205 5.46882L9.15508 6.46117C9.22642 6.53175 9.31477 6.58273 9.41157 6.60919L10.6768 6.95494C10.9876 7.03987 11.1707 7.36064 11.0857 7.67142C11.0008 7.98219 10.68 8.16527 10.3693 8.08035L8.95636 7.69424C8.76275 7.64133 8.58606 7.53936 8.44338 7.3982L7.91496 6.87541L7.89268 6.99229C7.80731 7.43999 7.73507 7.81883 7.73507 7.91974C7.73507 8.05087 8.18984 8.86178 8.3743 9.1853C8.42495 9.27413 8.46412 9.36837 8.49069 9.46711L9.19937 12.1004ZM6.27013 10.5491C6.32336 10.4664 6.36585 10.3775 6.3967 10.2845L5.39247 9.4617L5.30783 9.83443C5.29254 9.90186 5.26538 9.96604 5.22763 10.024C4.75469 10.7495 4.32581 11.378 3.94097 11.9096C3.75206 12.1706 3.81047 12.5353 4.07143 12.7242C4.33239 12.9131 4.69709 12.8547 4.88601 12.5938C5.29169 12.0334 5.75307 11.3518 6.27013 10.5491Z"
+                                                fill="currentColor"></path>
+                                        </svg> 8 мин.</h1>
+                                    <span>г. Санкт-Петербург, Таллинская ул., д. <br> 11, литера А</span>
+                                    <a href="#">Показать на карте</a>
+                                </div>
+                            </div>
+                            <div class="main__too">
+                                <div class="main__text-2">
+                                    <p><b>Сдача:</b> 2 кв. 2022 - 2 кв. 2022</p>
+                                    <span><b>Застройщик:</b> УК Хуа-Жэнь Инвест</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="main__info">
+                            <p>Студия <span>----------------------</span> от 589,8 млн ₽</p>
+                            <span>1-комн <span>--------------------------</span> от 8,5 млн ₽</span>
+                            <button class="form-control"><svg _ngcontent-wkg-c87="" width="17" height="16"
+                                    viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    class="catalog-header__svg">
+                                    <path _ngcontent-wkg-c87="" fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M9.16667 14.6667H1.83333V4.66667H9.16667H10.5H15.1667V14.6667L10.5 14.6667L10.5 9.33333H9.16667V14.6667ZM9.16667 16H0.5V4.66667V3.33333V0H1.83333H9.16667H9.5H10.5V3.33333H16.5V16H13.1667V14.6667H10.5V16H9.16667ZM9.16667 1.33333V3.33333H1.83333V1.33333H9.16667Z"
+                                        fill="#08090A"></path>
+                                </svg><a href="./cart-info.html">3 планировки в ЖК</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__row3">
+                    <div class="main__body">
+                        <span><svg _ngcontent-wkg-c88="" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path _ngcontent-wkg-c88=""
+                                    d="M2.07516 8.4C1.97495 8.2 1.97495 7.9 2.07516 7.6C2.17537 7.5 2.17537 7.4 2.27558 7.3L5.28184 4.3C5.68267 3.9 6.28393 3.9 6.68476 4.3C7.0856 4.7 7.0856 5.3 6.68476 5.7L5.38205 7H12.9979C13.5992 7 14 7.4 14 8C14 8.6 13.5992 9 12.9979 9H5.38205L6.68476 10.3C7.0856 10.7 7.0856 11.3 6.68476 11.7C6.48434 11.9 6.28393 12 5.9833 12C5.68267 12 5.48226 11.9 5.28184 11.7L2.27558 8.7C2.17537 8.6 2.07516 8.5 2.07516 8.4Z"
+                                    fill="currentColor"></path>
+                            </svg></span>
+                        <div class="main__numbers">
+                            <div class="main__block-active">1</div>
+                            <div class="main__block">2</div>
+                            <div style="font-weight: 600;" class="main__block">...</div>
+                            <div class="main__block">15</div>
+                        </div>
+                        <p><svg _ngcontent-wkg-c88="" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path _ngcontent-wkg-c88=""
+                                    d="M13.9248 8.4C14.0251 8.2 14.0251 7.9 13.9248 7.6C13.8246 7.5 13.8246 7.4 13.7244 7.3L10.7182 4.3C10.3173 3.9 9.71607 3.9 9.31524 4.3C8.9144 4.7 8.9144 5.3 9.31524 5.7L10.618 7H3.00209C2.40084 7 2 7.4 2 8C2 8.6 2.40084 9 3.00209 9H10.618L9.31524 10.3C8.9144 10.7 8.9144 11.3 9.31524 11.7C9.51566 11.9 9.71607 12 10.0167 12C10.3173 12 10.5177 11.9 10.7182 11.7L13.7244 8.7C13.8246 8.6 13.9248 8.5 13.9248 8.4Z"
+                                    fill="currentColor"></path>
+                            </svg></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer__info">
+                <span>@2022 rentator.ru</span>
+                <a href="./polic/politic.html">Политика конфиденциальности</a>
+                <a href="./polic/accept.html">Согласие на обработку персональных данных</a>
+            </div>
+            <div class="footer__contact">
+                <a href="#"><img src="https://seeklogo.com/images/T/telegram-logo-AD3D08A014-seeklogo.com.png"
+                        alt=""></a>
+                <a href="#"><img src="https://seeklogo.com/images/W/whatsapp-icon-logo-6E793ACECD-seeklogo.com.png"
+                        alt=""></a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./accets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script type="module">
+        import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js'
+
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+    </script>
+</body>
+
+</html>

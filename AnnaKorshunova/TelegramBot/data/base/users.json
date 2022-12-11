@@ -1,0 +1,161 @@
+[
+	{
+		"presonalId": 0,
+		"username": "bot",
+		"id": 123123123,
+		"nick": "bot",
+		"name": "bot bot",
+		"chat": 5015947677,
+		"region": "bot bot",
+		"activity": "bot",
+		"fieldOfActivity": "bot bot",
+		"needHelp": null,
+		"helpTo": "bot bot",
+		"mailActive": true,
+		"redirectSteps": 0,
+		"search_user": {
+			"region": false,
+			"teame": "bot"
+		},
+		"me_options": {
+			"region": false,
+			"teame": "bot"
+		},
+		"search_user_speek": {
+			"region": "bot bot",
+			"teame": "bot",
+			"speek_type": true
+		},
+		"me_options_speek": {
+			"region": "bot bot",
+			"teame": "bot",
+			"speek_type": true
+		}
+	},
+	{
+		"presonalId": 1,
+		"username": "Vladimir003",
+		"id": 5015947677,
+		"nick": "Vladimir003",
+		"name": "sd",
+		"chat": 5015947677,
+		"region": "sd",
+		"activity": "Мой",
+		"endThe": null,
+		"fieldOfActivity": "Мой",
+		"needHelp": null,
+		"helpTo": "по работе",
+		"mailActive": true,
+		"redirectSteps": 0,
+		"search_user": {
+			"region": "Россия Москва",
+			"teame": "Мой",
+			"searchType": 1,
+			"searchedUsers": [
+				null
+			]
+		},
+		"me_options": {
+			"region": "Россия Москва",
+			"teame": "Мой"
+		},
+		"search_user_speek": {
+			"region": "Россия Москва",
+			"teame": "Программирование",
+			"speek_type": false,
+			"searchType": 1,
+			"searchedUsers": [
+				null
+			]
+		},
+		"me_options_speek": {
+			"region": "Россия Москва",
+			"teame": "Программирование",
+			"speek_type": false
+		}
+	},
+	{
+		"presonalId": 2,
+		"username": "HesoyamiJs",
+		"id": 1454688178,
+		"nick": "HesoyamiJs",
+		"name": "asd",
+		"chat": 1454688178,
+		"region": "asd",
+		"activity": "asd",
+		"endThe": "asd",
+		"fieldOfActivity": "asd",
+		"needHelp": null,
+		"helpTo": "по работе",
+		"mailActive": false,
+		"redirectSteps": 0,
+		"search_user": {
+			"region": "Россия Москва",
+			"teame": "Мой",
+			"searchType": 1,
+			"searchedUsers": [
+				null
+			]
+		},
+		"me_options": {
+			"region": "Россия Москва",
+			"teame": "Мой"
+		},
+		"search_user_speek": {
+			"region": "Россия Москва",
+			"teame": "Программирование",
+			"speek_type": false,
+			"searchType": 1,
+			"searchedUsers": [
+				null
+			]
+		},
+		"me_options_speek": {
+			"region": "Россия Москва",
+			"teame": "Программирование",
+			"speek_type": false
+		}
+	},
+	{
+		"presonalId": 3,
+		"username": "Insurgentlycentrist",
+		"id": 5669378948,
+		"nick": "Insurgentlycentrist",
+		"name": "F",
+		"chat": 5669378948,
+		"region": "вфыа",
+		"activity": "городской активист",
+		"endThe": null,
+		"fieldOfActivity": "ландшафтный дизайн",
+		"needHelp": null,
+		"helpTo": "неформальное общение",
+		"mailActive": true,
+		"redirectSteps": 0,
+		"search_user": {
+			"region": "Россия Москва",
+			"teame": "Мой",
+			"searchType": 1,
+			"searchedUsers": [
+				null
+			]
+		},
+		"me_options": {
+			"region": "Россия Москва",
+			"teame": "Мой"
+		},
+		"search_user_speek": {
+			"region": "Россия Москва",
+			"teame": "Программирование",
+			"speek_type": false,
+			"searchType": 1,
+			"searchedUsers": [
+				null
+			]
+		},
+		"me_options_speek": {
+			"region": "Россия Москва",
+			"teame": "Программирование",
+			"speek_type": false
+		}
+	}
+]

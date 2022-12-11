@@ -1,0 +1,281 @@
+
+@font-face {
+    font-family: Gilroy-Regular;
+    src: url('/access/fonts/Gilroy-Regular.ttf');
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Gilroy-Regular;
+    width: 100%;
+    height: 100%;
+    color: #ECD893;
+
+}
+
+html{
+    width: 100%;
+    height: 100%;
+    background: url(/access/image/Layout.jpg);
+    // background: linear-gradient(45deg, #4A4A4A, #222222);
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+}
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .header{
+        // Менять растояние между лого и ЖК Золотой Город
+        margin: 20px 0;
+        display: flex;
+        height: 60px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        a{
+            font-size: 20px;
+            text-decoration: none;
+            color: #ECD893;
+            font-weight: bold;
+        }
+
+    }
+    .main{
+        margin: 0 0 20px 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .main__box-1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 80%;
+            .main__title{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                h1{
+                    margin: 0;
+                    padding: 0;
+                    font-size: 30px;
+                    color: transparent;    
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    background-image: linear-gradient(134.98deg, #D7B767 0%, #E4CE85 24.48%, #F4E9A7 54.17%, #EAD788 77.6%, #D5BC58 100%);
+
+
+                }
+                span{
+                    // Менять растояние между лого и менеджер по работе с клиентами
+
+                    margin: 0 0 0px 0;
+                    padding: 0; 
+                    font-weight: 600;            
+                    font-size: 16px;    
+                    text-align: center;
+                    color: #FFFFFF;                   
+               
+                }
+                p{
+                    margin: 0 0 0px 0;
+                    padding: 0; 
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 17px;
+                    /* identical to box height */
+                    
+                    text-align: center;
+                    
+                    color: #FFFFFF;                   
+
+                }
+            }
+            .main__navigation{
+               // Менять растояние между блокам с кнопками и между блоками с лого и менеджер
+
+                margin-top: 0px;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+
+                .main__button{
+                    cursor: pointer;
+                    // Менять растояние между кнопками
+
+                    margin-bottom: 15px;
+                    background: rgba(255, 255, 255, 0.01);
+                    border-radius: 100px;
+                    width: 280px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: white;
+                    font-weight: 400;
+                    font-size: 16px;
+                    padding: 12px 50px;
+                    border: 2px solid #E4CE85;
+//                     border-color: linear-gradient(134.98deg, #D7B767 0%, #E4CE85 24.48%, #F4E9A7 54.17%, #EAD788 77.6%, #D5BC58 100%),
+// linear-gradient(0deg, rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.01));
+
+                }
+            }
+            .main__down{
+                margin: 20px 0;
+                cursor: pointer;
+            }
+        }
+        .main__box-2{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            .main__title{
+                max-width: 300px;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                h1{
+                    margin: 0 0 10px 0;
+                    padding: 0;
+                    font-weight: 700;
+                    font-size: 18px;                
+                }
+                span{
+                    margin: 0 0 0px 0;
+                    padding: 0; 
+                    font-weight: 400;
+                    font-size: 15px;
+                    color: #8C94A4; 
+                              
+               
+                }
+                p{
+                    margin: 0 0 0px 0;
+                    padding: 0; 
+                    font-weight: 400;
+                    font-size: 15px;    
+                    color: #8C94A4; 
+
+                }
+
+            }
+        }
+        .main__box-3{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            .main__block{
+                // Менять отступы
+                margin: 20px 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 100%;
+                h1{
+                    font-weight: 700;
+                    font-size: 18px;
+                }
+                .main__image{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 100%;
+                    img{
+
+                    }
+                }
+                .main__text{
+                    max-width: 300px;
+                    height: 100%;
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    span{
+                        font-weight: 400;
+                        font-size: 15px;
+                        color: #8C94A4;                   
+                    }
+                }
+            }
+        }
+
+    }
+    .footer{
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .footer__title{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            span{
+                font-weight: 700;
+                font-size: 18px;
+            }
+        }
+        .footer__image{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            .footer__images{
+                margin: 15px 10px;
+            }
+
+        }
+        .footer__info{
+            text-align: center;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            span{
+                font-weight: 400;
+                font-size: 15px;
+                color: #8C94A4;
+            }
+        }
+    }
+}
+

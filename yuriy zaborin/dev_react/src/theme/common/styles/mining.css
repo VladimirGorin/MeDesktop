@@ -1,0 +1,39 @@
+.mining-item{
+    padding: 5px;
+    cursor: pointer;
+}
+.mining-item:hover, .mining-item.active{
+    color: #0569b3;
+}
+.mining-block{
+    padding-bottom: 10px;
+}
+
+.mining-block h2{
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 14px;
+}
+.mining-block .text{
+    font: 12px/16px Arial, Helvetica, sans-serif;
+}
+.mining-block .text p {
+    margin-bottom: 15px;
+}
+.slider-product{overflow: hidden;max-width: 250px;margin: auto;}
+.products .slick-prev::before, .products .slick-next::before {
+    color: #3359ff;
+    font-size: 30px;
+}
+.products .slick-prev {
+    left: 0;
+}
+.products .slick-next {
+    right: 0;
+}
+.products .slick-list{
+    margin: 0 50px;
+}
+.slick-slider.products{
+    user-select: text;
+}

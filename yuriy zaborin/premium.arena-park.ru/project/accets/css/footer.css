@@ -1,0 +1,26 @@
+.footer {
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  bottom: 1;
+  background-color: rgb(205, 211, 211);
+  border-top: 1px solid rgb(224, 219, 209);
+  align-items: center;
+  display: flex;
+}
+.footer .footer__body {
+  display: flex;
+  float: right;
+  align-items: center;
+}
+.footer .footer__body .footer__navigaton ul {
+  display: flex;
+  align-items: center;
+}
+.footer .footer__body .footer__navigaton ul li {
+  margin: 0 5px;
+  list-style-type: none;
+  width: 60px;
+  height: 20px;
+  background-color: white;
+}/*# sourceMappingURL=footer.css.map */

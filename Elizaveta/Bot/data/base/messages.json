@@ -1,0 +1,182 @@
+[
+    {
+        "channel0": {
+            "channelTitle":"Крош",
+            "messages":{
+                "message1": {
+                    "name":"asd",
+                    "text":"Мой второй текст"
+                },
+                "message2": {
+                    "name":"Слава",
+                    "text":"Это мой текст"
+                }
+            }
+        }
+    },
+    {
+        "channel1": {
+            "channelTitle":"Кто то",
+            "messages":{
+                "message1": {
+                    "name":"ывффыв",
+                    "text":"авыаываыва"
+                },
+                "message2": {
+                    "name":"ваывыаыва",
+                    "text":"ывваыаывыва"
+                }
+            }
+        }
+    },
+    {
+        "channel2": {
+            "channelTitle":"Кто то",
+            "messages":{
+                "message1": {
+                    "name":"ывффыв",
+                    "text":"авыаываыва"
+                },
+                "message2": {
+                    "name":"ваывыаыва",
+                    "text":"ывваыаывыва"
+                }
+            }
+        }
+    },
+    {
+        "channel3": {
+            "channelTitle":"Кто то",
+            "messages":{
+                "message1": {
+                    "name":"ывффыв",
+                    "text":"авыаываыва"
+                },
+                "message2": {
+                    "name":"ваывыаыва",
+                    "text":"ывваыаывыва"
+                }
+            }
+        }
+    },
+    {
+        "channel4": {
+            "channelTitle":"Кто то",
+            "messages":{
+                "message1": {
+                    "name":"ывффыв",
+                    "text":"авыаываыва"
+                },
+                "message2": {
+                    "name":"ваывыаыва",
+                    "text":"ывваыаывыва"
+                }
+            }
+        }
+    },
+    {
+        "channel5": {
+            "channelTitle":"Кто то",
+            "messages":{
+                "message1": {
+                    "name":"ывффыв",
+                    "text":"авыаываыва"
+                },
+                "message2": {
+                    "name":"ваывыаыва",
+                    "text":"ывваыаывыва"
+                }
+            }
+        }
+    },
+    {
+        "channel6": {
+            "channelTitle":"Кто то",
+            "messages":{
+                "message1": {
+                    "name":"ывффыв",
+                    "text":"авыаываыва"
+                },
+                "message2": {
+                    "name":"ваывыаыва",
+                    "text":"ывваыаывыва"
+                }
+            }
+        }
+    },
+    {
+        "channel7": {
+            "channelTitle":"Кто то",
+            "messages":{
+                "message1": {
+                    "name":"ывффыв",
+                    "text":"авыаываыва"
+                },
+                "message2": {
+                    "name":"ваывыаыва",
+                    "text":"ывваыаывыва"
+                }
+            }
+        }
+    },
+    {
+        "channel8": {
+            "channelTitle":"Кто то",
+            "messages":{
+                "message1": {
+                    "name":"ывффыв",
+                    "text":"авыаываыва"
+                },
+                "message2": {
+                    "name":"ваывыаыва",
+                    "text":"ывваыаывыва"
+                }
+            }
+        }
+    },
+    {
+        "channel9": {
+            "channelTitle":"Кто то",
+            "messages":{
+                "message1": {
+                    "name":"ывффыв",
+                    "text":"авыаываыва"
+                },
+                "message2": {
+                    "name":"ваывыаыва",
+                    "text":"ывваыаывыва"
+                }
+            }
+        }
+    },
+    {
+        "channel10": {
+            "channelTitle":"Кто то",
+            "messages":{
+                "message1": {
+                    "name":"ывффыв",
+                    "text":"авыаываыва"
+                },
+                "message2": {
+                    "name":"ваывыаыва",
+                    "text":"ывваыаывыва"
+                }
+            }
+        }
+    },
+    {
+        "channel11": {
+            "channelTitle":"Кто то",
+            "messages":{
+                "message1": {
+                    "name":"ывффыв",
+                    "text":"авыаываыва"
+                },
+                "message2": {
+                    "name":"ваывыаыва",
+                    "text":"ывваыаывыва"
+                }
+            }
+        }
+    }
+]

@@ -1,0 +1,104 @@
+.main .main__row-1 {
+  display: flex;
+  width: 100%;
+}
+.main .main__row-1 .main__text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 65px 65px;
+}
+.main .main__row-1 .main__text h1 {
+  margin: 0 0 50px 0;
+  color: black;
+  font-size: 51px;
+  font-family: "VTB-FONT", Arial, sans-serif;
+  line-height: 1.55;
+  font-weight: 800;
+}
+.main .main__row-1 .main__text .granite {
+  width: 100%;
+}
+.main .main__row-1 .main__text .granite span {
+  color: black;
+  font-size: 17px;
+  font-family: "VTB-FONT", Arial, sans-serif;
+  line-height: 1.4;
+  font-weight: 300;
+}
+.main .main__row-1 .main__text .granite span b {
+  font-weight: 700;
+}
+.main .main__row-1 .main__text .main__buttons {
+  margin: 150px 0 0 0;
+}
+.main .main__row-1 .main__text .main__buttons button {
+  margin: 0 20px 0 0;
+  width: 250px;
+  height: 50px;
+  border: none;
+  color: #172230;
+  font-size: 18px;
+  font-family: "VTB-FONT", Arial, sans-serif;
+  line-height: 1.55;
+  font-weight: 400;
+  border-radius: 30px;
+  background-color: #ffffff;
+}
+.main .main__row-1 .main__text .main__buttons a {
+  color: black;
+  font-size: 28px;
+  font-family: "VTB-FONT", Arial, sans-serif;
+  line-height: 1.55;
+  font-weight: 400;
+  text-decoration: none;
+}
+.main .main__row-1 .main__img {
+  width: 50%;
+  background-size: cover;
+  background-image: url(https://thumb.tildacdn.com/tild3365-6636-4663-b436-663837653837/-/cover/675x730/center/center/-/format/webp/_.jpg);
+}
+
+@media (max-width: 400px) {
+  .main .main__row-1 .main__text {
+    padding: 65px 5px;
+    width: 100%;
+  }
+  .main .main__row-1 .main__text .granite {
+    width: 100%;
+  }
+  .main .main__row-1 .main__img {
+    display: none;
+  }
+  .main .main__row-2 .main__text {
+    padding: 65px 5px;
+    text-align: right;
+    width: 100%;
+  }
+  .main .main__row-2 .main__text .granite {
+    width: 100%;
+  }
+  .main .main__row-2 .main__img {
+    display: none;
+  }
+  .main .main__row-4 .main__text {
+    padding: 65px 5px;
+    text-align: left;
+    width: 100%;
+  }
+  .main .main__row-4 .main__text .granite {
+    width: 100%;
+  }
+  .main .main__row-4 .main__img {
+    display: none;
+  }
+  .main .main__row-6 {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 0;
+  }
+  .main .main__row-6 .main__body {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=container.css.map */

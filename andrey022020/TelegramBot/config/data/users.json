@@ -1,0 +1,32 @@
+[
+	{
+		"id": 5015947677,
+		"nick": "Vladimir003",
+		"langue": "en",
+		"gender": "male",
+		"age": "51+",
+		"name": "ВАШЕ ИМЯ",
+		"coin": 1545,
+		"bank": null,
+		"step": null,
+		"complaints": "yes",
+		"timePerPc": "0-1",
+		"breaks": "byAppointment",
+		"trainingSteps": null
+	},
+	{
+		"id": 1274672421,
+		"nick": "Andrey022020",
+		"langue": "woman",
+		"gender": null,
+		"age": "31-40",
+		"name": "22",
+		"coin": 495,
+		"bank": null,
+		"step": null,
+		"complaints": null,
+		"timePerPc": null,
+		"breaks": null,
+		"trainingSteps": null
+	}
+]

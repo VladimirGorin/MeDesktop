@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6{
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, span, button, p, a, b, li{
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  
+}
+
+a, li{
+  text-decoration: none;
+  list-style-type: none;
+}
+
+::-webkit-scrollbar { /* 1 - скроллбар */
+  width: 4px;
+  height: 4px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb { /* 5 - ползунок */
+  border-radius: 2px;
+  background-color: #d1d1d1;
+}
+
+#root {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 100vh;
+  overflow: auto;
+}
+
+.lds-hourglass {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-hourglass:after {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 8px;
+  box-sizing: border-box;
+  border: 32px solid #cef;
+  border-color: #cef transparent #cef transparent;
+  animation: lds-hourglass 1.2s infinite;
+}
+
+h1,h2,h3,h4,h5,h6,span,button,p,a,b,li {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(41, 41, 41);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: rgb(255, 251, 0);
+  justify-content: space-between;
+  position: relative;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.main__body {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.main__rooms {
+  background-color: #efeff1;
+  width: 80%; 
+  height: 80vh;
+   overflow-y: auto;
+}
+.main__rooms:hover {
+
+}
+
+.main__rooms>.main__roomsItem>a {
+  color: #333;
+  font-size: 19px;
+
+}
+
+.main__rooms>.main__roomsItem {
+  color: #53535f;
+  padding: 15px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 15px;
+  
+}
+.main__roomsItem:hover {
+  background-color: #e6e6ea;
+}
+.main__info {
+  background-color: #f7f7f8;
+  width: 100%;
+  display: flex;
+  padding: 15px 10px;
+  flex-direction: column;
+}
+
+.main__info>h1 {
+  color: #333;
+}
+.main__info>span {
+  color: #333;
+}
+
+.main__chat {
+  width: 100%;
+  background-color: #e6e6ea;
+  height: 80vh;
+}
+
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
+}

@@ -1,0 +1,4 @@
+node_modules
+.idea
+swagger-codegen
+.git

@@ -1,0 +1,12 @@
+.footer {
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #9147ff;
+}
+
+.body {
+  padding: 10px 0;
+}

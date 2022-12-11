@@ -1,0 +1,92 @@
+.posts{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    justify-content: center;
+}
+
+.posts__body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    height: 100%;
+    background-color: rgb(202, 202, 202);
+}
+
+.posts__row-1{
+    width: 100%;
+    height: 450px;
+    background-image:url("https://ichef.bbci.co.uk/news/800/cpsprodpb/70D7/production/_106078882_gettyimages-1127799959.jpg.webp")
+}
+
+.posts__row-2{
+    width: 100%;
+    height: 100%;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.posts__chat textarea{
+    margin-top: 10px;
+    width: 100%;
+    height: 70px;
+}
+.posts__chat button{
+    width: 100%;
+    height: 70px;
+    color: black;
+    font-size: 19px;
+}
+
+.post__img img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20%;
+    margin-bottom: 30px;
+}
+
+.post__img p{
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.post__img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.post{
+    margin-left: 20px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.post__validate{
+    color: red;
+    font-size: 25px;
+    margin: 10px 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.none{
+    color: red;
+    font-size: 25px;
+    margin: 10px 0;
+    align-items: center;
+    display: none;
+    justify-content: center;
+    
+}

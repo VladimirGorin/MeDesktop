@@ -1,0 +1,172 @@
+.header{
+    font-family: Arial, Helvetica, sans-serif;
+    .header__pannel{
+        z-index: 9999;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgba(0, 0, 0, 0.479);
+        padding: 0 14px;
+        width: 100%;
+        height: 100px; 
+        position: fixed;
+        top: 0;
+        left: 0;
+        .header__body{
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            .header__logo{
+                width: 210px;
+            }     
+            .header__navigation{
+                display: flex;
+                ul{
+                    display: flex;
+                    padding: 0;
+                    margin: 0;
+    
+                }
+                li{
+                    padding: 0;
+                    margin: 0 15px;
+                    list-style-type: none;
+                    a{
+                        color: #ffffff;
+                        font-size: 18px;
+                        font-family: 'VTB-FONT',Arial,sans-serif;
+                        line-height: 1.55;
+                        font-weight: 400;
+                        text-decoration: none;
+                    }
+                }
+            }   
+            .header__task{
+                
+                display: flex;
+    
+                .header__tel{
+                    
+                    display: flex;
+                    align-items: center;
+                    span{
+                        img{
+                            margin: 0 10px 0 0;
+                            width: 25px;
+                            height: 25px;
+                        }
+                        a{
+                            color: #ffffff;
+                            font-size: 24px;
+                            font-family: 'VTB-FONT',Arial,sans-serif;
+                            line-height: 1.55;
+                            font-weight: 400;
+                            text-decoration: none;
+                        }
+                    }
+                }
+                .header__button{
+                    margin: 0 0 0 15px;
+    
+                    button{
+                        color: #ffffff;
+                        font-size: 16px;
+                        font-family: 'VTB-FONT',Arial,sans-serif;
+                        line-height: 1.55;
+                        width: 220px;
+                        height: 45px;
+                        border: 1px solid white;
+                        border-radius: 30px;
+                        background-color: #bea582;
+                        text-align: center;
+                        font-weight: 600;
+    
+                    }
+                    
+                    .hover:hover{
+                        transition: ease-in-out 0.2;
+                        transition: 0.2s;
+                        color: #bea582;
+                        background-color: white;
+                    }
+                    
+
+                }
+            }
+        } 
+    }   
+    .header__content{
+        background-image: url(https://www.kvartiravmoskve.ru/uploads/fck/file/1%D1%81%D1%82%D0%B0%D1%80%D1%8B%D0%B9%20%D1%86%D0%B5%D0%BD%D1%82%D1%80.jpg);
+        height: 640px;
+        width: 100%;
+        background-size: cover;
+        .header__bloceter{
+            width: 100%;
+            height: 100px; 
+            margin: 0 0 100px 0;
+        }
+        .header__text{
+            margin: 0 0 37px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            h1{
+                color: #ffffff;
+                font-size: 90px;
+                font-family: 'VTB-FONT',Arial,sans-serif;
+                line-height: 1.2;
+                font-weight: 600;
+                margin: 0;
+                padding: 0;
+            }
+            h2{
+                margin: 25px 0;
+
+
+                color: #ffffff;
+                font-size: 37px;
+                font-family: 'VTB-FONT',Arial,sans-serif;
+                line-height: 1.2;
+                font-weight: 400;
+            }
+            button{
+                margin: 10px 0;
+                color: #ffffff;
+                font-size: 16px;
+                font-family: 'VTB-FONT',Arial,sans-serif;
+                line-height: 1.55;
+                width: 220px;
+                height: 45px;
+                border-radius: 30px;
+                background-color: #bea582;
+                text-align: center;
+                font-weight: 600;
+                border: none;
+
+            }
+            .hover:hover{
+                transition: ease-in-out 0.2;
+                transition: 0.2s;
+                color: #bea582;
+                background-color: white;
+            }
+        }
+        .header__img{
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 120px;
+
+            img{
+                
+            }
+        }
+    }
+
+}
+
+.hover:hover{
+    transition: ease-in-out 0.2;
+    transition: 0.2s;
+    color: #bea582;
+    background-color: white;
+}

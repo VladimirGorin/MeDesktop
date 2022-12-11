@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{company_name}} | {{page_type}}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for( 'static', filename='css/style.css', v=1)}}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for( 'static', filename='css/adaptive.css', v=1)}}">
+</head>
+<body>
+    <div class="main">
+
+        <div class="container">
+            <div class="block">
+                <form class="form"action="/create-new-acc" method="post">
+                    <h3>Регистрация</h3>
+                    <input class="input" type="email" name="email" placeholder="Email" autocomplete="off" id="input">
+                    <input class="input" type="text" name="name" placeholder="Придумайте никнейм" autocomplete="off">
+                    <input class="input" type="password" name="password1" placeholder="Пароль" autocomplete="off">
+                    <input class="input" type="password" name="password2" placeholder="Подтвердите пароль" autocomplete="off">
+                    <a href="/">Уже есть аккаунт?</a>
+                    <input type="submit" value="Зарегестрироваться">
+                    <div class="error">
+                        <h3 style="color: red; font-family: 'Exo 2', sans-serif; letter-spacing: 2px;">{{error}}</h3>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <footer>
+            <div class="footer">
+
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

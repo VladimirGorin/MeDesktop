@@ -1,0 +1,9 @@
+node_modules
+package-lock.json
+chromedriver
+.vscode
+__pycache__
+.git
+.mp4
+Парсинг с групп.mp4
+Изменения профиля.mp4

@@ -1,0 +1,29 @@
+[
+	{
+		"id": 5015947677,
+		"nick": "Vladimir003",
+		"tikCoin": 400,
+		"corons": 0,
+		"videoPlayed": 6,
+		"vipGold": false,
+		"verify": false
+	},
+	{
+		"id": 708356961,
+		"nick": "Minerfly",
+		"videoPlayed": 4,
+		"vipGold": false,
+		"verify": false,
+		"corons": 0,
+		"tikCoin": 45
+	},
+	{
+		"id": 5268519311,
+		"nick": "MinerX_Support",
+		"tikCoin": 45,
+		"corons": 0,
+		"videoPlayed": 3,
+		"vipGold": false,
+		"verify": false
+	}
+]

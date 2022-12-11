@@ -1,0 +1,156 @@
+.main{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 0;
+    .main__body{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        .main__href{
+            position: absolute;
+            left: 80px;
+            top: 10px;
+
+        }
+        .main__row-1{
+            padding: 0 80px;
+            margin: 20px 0;
+            display: flex;
+            flex-direction: column;
+            .main__post{
+                width: 660px;
+
+                .main__title{
+                    margin: 20px 0;
+
+                    h1{
+                        font-weight: 900;
+                        color: rgba(5, 1, 22, 0.901);
+                        margin: 0 0 20px 0;
+                        padding: 0;
+                    }
+                    span{
+                        font-size: 18px;
+                        line-height: 1.56;
+                    }
+                    p{
+                        font-size: 18px;
+                        line-height: 1.56;
+                        margin: 20px 0;
+                    }
+                    b{
+                        font-size: 18px;
+                        line-height: 1.56;
+                        font-weight: normal;
+                        background-color: rgba(255, 255, 0, 0.775);
+                    }
+                }
+                .main__text{
+                    h2{
+                        font-weight: normal;
+                        margin-bottom: 20px;
+                    }
+                    ul{
+                        padding: 0;
+                        margin-left: 30px;
+                        li{
+                            font-size: 18px;
+                            line-height: 1.56;
+                            b{
+                                font-size: 18px;
+                                line-height: 1.56;
+                            }
+                        }
+                        .li-item::marker{
+                            color: rgb(5, 5, 174);
+                        }
+                    }
+                }
+                .main__contact{
+                    margin: 20px 0;
+                }
+                .main__image{
+                    a{
+                        margin: 0 5px;
+                    }
+                }
+
+
+            }
+            .main__form{
+                align-items: center;
+                max-width: 1040px;
+                box-shadow: 0 .5rem 1.5rem rgba(22,28,45,.1)!important;
+                border-radius: 5px;
+                background-color: #fad776!important;
+                height: 437px;
+                display: flex;
+                padding: 3rem!important;
+                .main__text{
+                    margin-right: 50px;
+                    h1{
+                        font-weight: 900;
+                        color: rgb(9, 4, 32);
+                        margin: 0;
+                        padding: 0;
+                        font-size:35px;
+                        margin-bottom: 40px;
+                    }
+                    ul{
+                        margin-left: 20px;
+                        padding: 0;
+                        display: flex;
+                        flex-direction: column;
+                        
+                        li{
+                            margin-bottom: 30px;
+                            list-style-type: circle;
+                        }
+                    }
+                }
+                .main__input{
+                    width: 287px;
+                    form{
+                        width: 100%;
+                        input{
+                            width: 100%;
+                            border: 1px solid rgba(0, 0, 0, 0.235);
+                        }
+                        .form-group{
+                            margin-bottom: 15px;
+                        }
+                        label{
+                            font-size: 12px;
+                            margin-bottom: 5px;
+                        }
+                        .selectForm{
+                            display: flex;
+                            flex-direction: column;
+                            .row-select{
+                                display: flex;
+                                flex-direction: row;
+                            }
+                            select{
+                                width: 91px;
+                                height: 53px;
+                                margin-left: 3px;
+                            }
+                        }
+                        button{
+                            width: 100%;
+
+                        }
+                    }
+                }
+            }
+            
+        }
+
+    }
+
+}

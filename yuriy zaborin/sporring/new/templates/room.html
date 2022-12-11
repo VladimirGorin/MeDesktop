@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{company_name}} | {{page_type}}</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="{{ url_for( 'static', filename='css/style.css', v=1)}}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for( 'static', filename='css/adaptive.css', v=1)}}">
+    
+    </head>
+<body>
+    <div class="main">
+        <header>
+            <div class="m">
+                <div class="header">
+                    <ul>
+                        <li class="itm">
+                            <a href="/">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-house" viewBox="0 0 16 17">
+                                    <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                                    <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                                </svg>
+                            </a>
+                        </li>
+                        
+                        <li class="itm">
+                            <a href="/profile">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="itm">
+                            <a href="/susbcriptions">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-heart" viewBox="0 0 16 16">
+                                    <path d="M9 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm-9 8c0 1 1 1 1 1h10s1 0 1-1-1-4-6-4-6 3-6 4Zm13.5-8.09c1.387-1.425 4.855 1.07 0 4.277-4.854-3.207-1.387-5.702 0-4.276Z"/>
+                                </svg>
+                            </a>
+                        </li>
+                        
+                        <li class="eye-catching with-icon">
+                            <a href="/">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+            <div class="c">
+                <div class="header">
+                    <ul>
+                        <li class="itm">
+                            <a href="/">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-house" viewBox="0 0 16 17">
+                                    <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                                    <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                                </svg>Главная
+                            </a>
+                        </li>
+                        
+                        <li class="itm">
+                            <a href="/profile">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                                </svg><strong id="username">{{ user }}</strong>
+                            </a>
+                        </li>
+                        
+                        <li class="eye-catching with-icon">
+                            <a href="/create-room">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+                                </svg>Новый спор
+                            </a>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+
+        </header>
+        <div class="container">
+            <audio id="audio1" autoplay></audio>
+            <div class="container-home">
+                <div class="left-cont">
+                    <div id="fightId" style="display: none;">{{fight[0]}}</div>
+                    <div id="me" style="display: none;">{{user}}</div>
+                    <div class="block">
+                        <h3>Сейчас спорят</h3>
+                        {% for fight in fights %}
+                        <a class="block-profile" href="/room/{{fight[0]}}">
+                                <div class="block-profile-content">
+                                    <ul class="block-profile-ul">
+                                        <li class="block-profile-avatar"><img class="user-avatar" src="/static/images/{{fight[0]}}/photos/{{fight[4]}}" alt=""></li>
+                                        <li class="block-profile-name">{{fight[2]}}</li>
+                                    </ul>
+                                </div>
+                        </a>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="middle-cont">
+                    <div class="middle-inner">
+                        {% if statusRoom == 1%}
+                            <div class="fight-first-person">
+                                <div class="fight-block">
+                                    <div class="fight-block-img">
+                                        <audio id="audio1"></audio>
+                                        <video id="video1"></video>
+                                    </div>
+                                    <div class="fight-block-name">
+                                        <h3>{{author[2]}}</h3>
+                                    </div>
+                                    <div class="fight-block-icons">
+                                        <ul>
+                                            <li>
+                                                <a id="mute1" style="width: 0px; height: 0px; display: none;">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="green" class="bi bi-mic" viewBox="0 0 16 16">
+                                                        <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"/>
+                                                        <path d="M10 8a2 2 0 1 1-4 0V3a2 2 0 1 1 4 0v5zM8 0a3 3 0 0 0-3 3v5a3 3 0 0 0 6 0V3a3 3 0 0 0-3-3z"/>
+                                                        </svg>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a id="start1">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="red" class="bi bi-mic-mute" viewBox="0 0 16 16">
+                                                            <path d="M13 8c0 .564-.094 1.107-.266 1.613l-.814-.814A4.02 4.02 0 0 0 12 8V7a.5.5 0 0 1 1 0v1zm-5 4c.818 0 1.578-.245 2.212-.667l.718.719a4.973 4.973 0 0 1-2.43.923V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 1 0v1a4 4 0 0 0 4 4zm3-9v4.879l-1-1V3a2 2 0 0 0-3.997-.118l-.845-.845A3.001 3.001 0 0 1 11 3z"/>
+                                                            <path d="m9.486 10.607-.748-.748A2 2 0 0 1 6 8v-.878l-1-1V8a3 3 0 0 0 4.486 2.607zm-7.84-9.253 12 12 .708-.708-12-12-.708.708z"/>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a id="mutevideo1" style="width: 0px; height: 0px; display: none;">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="green" class="bi bi-webcam" viewBox="0 0 16 16">
+                                                            <path d="M0 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H9.269c.144.162.33.324.531.475a6.785 6.785 0 0 0 .907.57l.014.006.003.002A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.224-.947l.003-.002.014-.007a4.473 4.473 0 0 0 .268-.148 6.75 6.75 0 0 0 .639-.421c.2-.15.387-.313.531-.475H2a2 2 0 0 1-2-2V6Zm2-1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H2Z"/>
+                                                            <path d="M8 6.5a1 1 0 1 0 0 2 1 1 0 0 0 0-2Zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0Zm7 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Z"/>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a id="startvideo1">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="red" class="bi bi-webcam" viewBox="0 0 16 16">
+                                                            <path d="M0 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H9.269c.144.162.33.324.531.475a6.785 6.785 0 0 0 .907.57l.014.006.003.002A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.224-.947l.003-.002.014-.007a4.473 4.473 0 0 0 .268-.148 6.75 6.75 0 0 0 .639-.421c.2-.15.387-.313.531-.475H2a2 2 0 0 1-2-2V6Zm2-1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H2Z"/>
+                                                            <path d="M8 6.5a1 1 0 1 0 0 2 1 1 0 0 0 0-2Zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0Zm7 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Z"/>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="fight-second-person">
+                                    <div class="fight-block">
+                                        <div class="fight-block-img">
+                                            {% if enemy[6] == 'default' %}
+                                                <video id="video2"></video>
+                                                <audio id="audio2"></audio>
+                                            {% else %}
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                                                </svg>
+                                            {% endif %}
+                                        </div>
+                                        <div class="fight-block-name">
+                                            <h3>{{enemy[2]}}</h3>
+                                        </div>
+                                        <div class="fight-block-icons">
+                                            <ul>
+                                                <li>
+                                                    <a id="mute2" style="width: 0px; height: 0px; display: none;">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="green" class="bi bi-mic" viewBox="0 0 16 16">
+                                                            <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"/>
+                                                            <path d="M10 8a2 2 0 1 1-4 0V3a2 2 0 1 1 4 0v5zM8 0a3 3 0 0 0-3 3v5a3 3 0 0 0 6 0V3a3 3 0 0 0-3-3z"/>
+                                                            </svg>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a id="start2">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="red" class="bi bi-mic-mute" viewBox="0 0 16 16">
+                                                                <path d="M13 8c0 .564-.094 1.107-.266 1.613l-.814-.814A4.02 4.02 0 0 0 12 8V7a.5.5 0 0 1 1 0v1zm-5 4c.818 0 1.578-.245 2.212-.667l.718.719a4.973 4.973 0 0 1-2.43.923V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 1 0v1a4 4 0 0 0 4 4zm3-9v4.879l-1-1V3a2 2 0 0 0-3.997-.118l-.845-.845A3.001 3.001 0 0 1 11 3z"/>
+                                                                <path d="m9.486 10.607-.748-.748A2 2 0 0 1 6 8v-.878l-1-1V8a3 3 0 0 0 4.486 2.607zm-7.84-9.253 12 12 .708-.708-12-12-.708.708z"/>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a id="mutevideo2" style="width: 0px; height: 0px; display: none;">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="green" class="bi bi-webcam" viewBox="0 0 16 16">
+                                                                <path d="M0 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H9.269c.144.162.33.324.531.475a6.785 6.785 0 0 0 .907.57l.014.006.003.002A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.224-.947l.003-.002.014-.007a4.473 4.473 0 0 0 .268-.148 6.75 6.75 0 0 0 .639-.421c.2-.15.387-.313.531-.475H2a2 2 0 0 1-2-2V6Zm2-1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H2Z"/>
+                                                                <path d="M8 6.5a1 1 0 1 0 0 2 1 1 0 0 0 0-2Zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0Zm7 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Z"/>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a id="startvideo2">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="red" class="bi bi-webcam" viewBox="0 0 16 16">
+                                                                <path d="M0 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H9.269c.144.162.33.324.531.475a6.785 6.785 0 0 0 .907.57l.014.006.003.002A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.224-.947l.003-.002.014-.007a4.473 4.473 0 0 0 .268-.148 6.75 6.75 0 0 0 .639-.421c.2-.15.387-.313.531-.475H2a2 2 0 0 1-2-2V6Zm2-1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H2Z"/>
+                                                                <path d="M8 6.5a1 1 0 1 0 0 2 1 1 0 0 0 0-2Zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0Zm7 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Z"/>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 style="color: #fff;">{{author[2]}} / {{enemy[2]}}</h3>
+                            <h3>{{fight[2]}}</h3>
+                            <h5>{{fight[3]}}</h5>
+                            {% if user == author[2] %}
+                                <a id="closeFight" class="btn" style="background-color: #000;">Закончить спор</a>
+                            {% endif %}
+                        {% else %}
+                            <h3>Данное событие уже окончено!</h3>
+                        {% endif %}
+                </div>
+                <div class="right-cont">
+                    <div class="general-chat">
+                        <h3>Чат: {{fight[2]}}</h3>
+                        <div class="message-box">
+                            <ul id="messages">
+                                
+                            </ul>
+                        </div>
+                        <div class="chat-btns">
+                            <form action="" id="form_send_msg">
+                                {% if statusRoom == 1 %}
+                                    {% if user is not none %}
+                                        <input type="text" id="message_input" name="message_text" placeholder="Отправить сообщение">
+                                        <input type="submit" id="send_msg" value="Отправить">
+                                    {% else %}
+                                        <a href="/login">Авторизоваться</a>
+                                    {% endif %}
+                                {% endif %}
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js" integrity="sha256-bQmrZe4yPnQrLTY+1gYylfNMBuGfnT/HKsCGX+9Xuqo=" crossorigin="anonymous"></script>
+                {% if user == author[2] %}
+                    <script src="{{ url_for( 'static', filename='js/voice1.js')}}"></script>
+                    <script>
+                        const socketClose = io.connect('http://127.0.0.1:5000');
+                        document.querySelector("#closeFight").onclick = function(){
+                            console.log('Нажал!');
+                            socketClose.send({"type": "fightClose", "fightId": "{{fight[0]}}"});
+                        };
+
+                    </script>
+                {% elif user == enemy[2] %}
+                    <script src="{{ url_for( 'static', filename='js/voice2.js')}}"></script>
+                {% else %}
+                    <script src="{{ url_for( 'static', filename='js/voice3.js')}}"></script>
+                {% endif %}
+
+                {% if user is not none %}
+                    <script srс="{{ url_for( 'static', filename='js/voice.js')}}"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js" integrity="sha256-bQmrZe4yPnQrLTY+1gYylfNMBuGfnT/HKsCGX+9Xuqo=" crossorigin="anonymous"></script>
+
+                    <script>
+                        $(document).ready(() => {
+                            $('#form_send_msg').on('submit', (e) => {
+                                e.preventDefault();
+                            });
+
+                            const socket = io.connect('http://127.0.0.1:5000');
+                            const username = '{{user}}';
+                            const chatId = '{{chatId}}';
+
+                            $('#send_msg').on('click', () => {
+                                socket.send({
+                                        'msg': $('#message_input').val(),
+                                        'username': username,
+                                        'chatId': chatId
+                                    });
+                                $('#message_input').val('');
+                            });
+
+                            socket.on('message', data => {
+                                if (data.type == "msg" && data.data.msg.length > 0) {
+                                    if (data.data.username === 'Service message') {
+                                        $('#messages').append(`<li class="text-muted"><strong>${data.data.username}:</strong> ${data.data.msg}</li>`);
+                                    } else {
+                                        $('#messages').append(`<li class="msg-body"><strong class="msg-author">${data.data.username}:</strong> ${data.data.msg}</li>`);
+                                    }
+                                }
+                            });
+                            socket.on("message", data => {
+                                if (data.type == "fightClose"){
+                                    if (chatId == data.chatId){
+                                        window.location.reload();
+                                    }
+                                }
+                            });
+                        });
+                    </script>
+                {% endif %}
+                <script>                        
+                    const socketData = io.connect('http://127.0.0.1:5000');
+                    socketData.on('message', data =>{
+                        if (data.type == "fightClose" && data.fightId == "{{fight[0]}}"){
+                            console.log("Стоп!");
+                            console.log(data);
+                            location.reload();
+                        }
+                    });
+                </script>
+
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

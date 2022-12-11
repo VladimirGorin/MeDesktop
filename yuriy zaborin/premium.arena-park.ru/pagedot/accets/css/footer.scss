@@ -1,0 +1,69 @@
+.footer{
+    background-color: #373A4C;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    width: 100%;
+    height: 80px;
+    padding: 0px 80px;
+    align-items: center;
+    justify-content: space-between;
+    // color: rgba(255, 255, 255, 0.877);
+    .footer__date{
+        color: #D8DAE7;
+        font-size: 19px;
+        line-height: 20px;
+    }
+    .footer__politic{
+        a{
+            color: #D8DAE7;
+            font-size: 19px;
+            line-height: 20px;
+            margin: 0 10px; 
+        }
+    }
+}
+
+.contact{
+    position: fixed;
+    bottom: 60px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    img{
+        width: 50px;
+        height: 50px;
+    }
+    span{
+        position: absolute;
+        animation: click 5s infinite alternate;
+        border-radius: 50%;
+        animation-duration: 1.2s;
+        bottom: -58px;
+        right: 0;
+        a{
+            transition: all 0.1s ease 0s;
+            width: 35px;
+            height: 35px;
+            background-color: rgba(0, 122, 0, 0.616);
+            border-radius: 50%;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            border: none;
+
+            
+        }
+        
+    }
+}
+@keyframes click {
+    0%{
+        border: 5px solid rgba(0, 128, 0, 0.329);
+    }
+    100%{
+        border: 10px solid rgba(0, 128, 0, 0.329);
+    }
+}

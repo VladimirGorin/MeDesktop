@@ -1,0 +1,300 @@
+.success-alert-text{color:#00b366}
+.error-alert-text,.warning-alert-text{color:#e5443e}
+.modalOrder {
+    top: 50%; 
+    left:50% ;
+    right: auto;
+    bottom: auto;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    outline: none;
+    background-color:#fff;
+    padding: 0px;
+    max-width: 600px;
+    min-width: 300px;
+    height: auto;
+}
+.modalOrder.fullHightModal{
+    height: 85vh;
+}
+.modalOrder .orderInfo {
+    position: relative;
+    height: 200px;
+}
+.modalOrder .orderInfo .checkout-box {
+    padding: 0 10px;
+}
+.modalOrder .orderContacts {
+    height: calc(100% - 200px);
+}
+.modalOrder .orderContacts .checkout-info {
+    position: relative;
+    overflow: auto;
+    max-height: 90%;
+}
+.modalOrder .orderContacts .checkout-button-wrap {
+    text-align: center;
+    margin-top: 10px;
+}
+.modalOrder .fullHight{
+    height: 100%;
+}
+.Overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 7000;
+}
+
+.removeAccount{
+    padding: 15px;
+}
+.removeAccount .description{
+    margin-bottom: 20px;
+}
+.modalRemove-buttons{
+    display: flex;
+    justify-content: space-between;
+}
+.modalRemove-buttons .button{
+    width: 40%;
+}
+
+
+.modalContainer .columns{
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.modalContainer .checkout-success-details {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background-image: url(/assets/images/close.svg);
+    background-size: 50%;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 5px;
+    background-position: center;
+    box-shadow: 0 0 3px;
+    transform: rotate(0deg);
+    transition: all 0.1s ease-in;
+}
+.close:hover {
+    background-size: 75%;
+    background-size: 60%;
+    transform: rotate(45deg);
+}
+
+.modal-order figure{ margin: 0; }
+
+.modal-order .small-image-placeholder, .mini-cart .small-image-placeholder, .checkout-box .small-image-placeholder{
+    background-size: contain;
+}
+
+.list_entry h3{
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 24px; 
+    margin-bottom: 10px;
+}
+
+.list_entry p{
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 20px;
+}
+
+.sale_slogan{
+    border: 1px solid #fc6f79;
+    border-radius: 3px;
+    margin: 0;
+    padding: 1em;
+    width: 100%;
+    color: #fc6f79;
+}
+
+.sale_label{
+    position: absolute;
+    top:0;
+    right: 0;
+    background: #f81100;
+    z-index: 1;
+    color: #fff;
+    padding: 2px 8px;
+}
+.section-product .sale_label{
+    top:45px;
+    right: inherit;
+    left: 12px;
+}
+
+.manager.section-product .sale_label{
+    top:10px;
+    right: 20px;
+    left: inherit;
+}
+
+.modalContainer .checkout-step{
+    padding: 15px;
+}
+
+.modalContainer .checkout-step .columns{
+    margin-bottom: 0;
+}
+.modalContainer .checkout-step .columns .column{
+    padding: 0 10px;
+}
+
+@media screen and (max-width: 769px) {
+	.bingc-phone-button {
+		display: none !important;
+    }
+    jdiv {
+		display: none !important;
+    }
+    .section-product .sale_label{
+        top:0;
+        right: 12px;
+        left: inherit;
+    }
+    .manager.section-product .sale_label{
+        top:-20px;
+        right: 0;
+        left: inherit;
+    }
+    .modalContainer .column{
+        padding: 0;
+    }
+
+    .modalContainer{
+        max-height: 100vh;
+        overflow: auto;
+    }
+
+    .modalContainer .checkout-field input[type="text"], 
+    .modalContainer .checkout-field input[type="email"], 
+    .modalContainer .checkout-field input[type="tel"], 
+    .modalContainer .checkout-field input[type="password"], 
+    .modalContainer .checkout-field textarea{
+        padding: 5px;
+    }
+
+    .modalContainer .checkout-field label{
+        font-size: 12px;
+    }
+
+    .modalContainer .checkout-step{
+        padding: 15px 30px;
+    }
+
+    .modalContainer .checkout-button-wrap {
+        margin-top: 15px;
+    }
+    .modalContainer .checkout-field.agreement {
+        margin: 0px;padding: 0;
+    }
+    .modalContainer .checkout-box {
+        padding: 10px;
+    }
+    .modalContainer .checkout-step .columns .column{
+        padding: 0;
+    }
+    .modalContainer .checkout-step{
+        padding: 0px 10px 50px 10px;
+    }
+    .modalContainer .close {
+        left: 5px;
+        top: 5px;
+        width: 30px;
+        height: 30px;
+        z-index: 1000;
+    }
+
+}
+@media screen and (max-width: 400px) {
+    .modalOrder .orderInfo {
+        position: relative;
+        height: 130px;
+        padding-top: 10px;
+    }
+
+    .modalOrder .checkout-box .total-price {
+        padding-left: 10px;
+    }
+
+}
+.servicebtn{
+    width: auto;
+    height: auto;
+    color: #fff;
+}
+.servicebtn:hover{
+    color: #fff;
+}
+
+.modalService{
+    top: 50%; 
+    left:50% ;
+    right: auto;
+    bottom: auto;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    outline: none;
+    background-color:#fff;
+    padding: 20px;
+    max-width: 600px;
+    min-width: 300px;
+}
+.left_menu{
+    margin-bottom: 30px;
+}
+.all_suppliers{cursor: pointer; font-size: 14px;}
+
+.analyse_btn{font-size: 18px;cursor: pointer;}
+.analysis{width: 100%;max-height: 194px;overflow: auto;margin-top: 5px;}
+.analysis .analysis_item{display: flex;}
+.analysis .analysis_item .seller{width: 50%;}
+.analysis .analysis_item .dt{width: 30%; text-align: center;}
+.analysis .analysis_item .price{width: 20%; text-align: center;}
+.langs{
+    display: flex;
+}
+.langs .lang{
+    display: block;
+    background-size: cover;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    opacity: 0.5;
+    margin: 1px;
+    padding: 0 5px;
+}
+.langs .lang.current{
+    border: 1px solid #0266b1;
+    opacity: 1;
+    color: #0266b1;
+}
+.langs .lang:hover{
+    opacity: 1;
+}
+.top-menu-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

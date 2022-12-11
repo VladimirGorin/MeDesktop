@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/access/css/index.css">
+</head>
+<body class="has-animations">
+    <div class="wrapper">
+        <div class="shadow">
+            <div class="shadow__top"></div>
+            <div class="shadow__center"></div>
+            <div class="shadow__bottom"></div>
+        </div>
+        <div class="info">
+            <div class="info__left">
+                <span>Всё<br>в одном<br>месте</span>
+                <div class="info__float-top info__button">Друзья</div>
+                <div class="info__float-right info__button">Бизнес</div>
+                <div class="info__float-left info__button">Обучение</div>
+            </div>
+            <div class="info__right">
+                <span>Всё<br>в одном<br>месте</span>
+                <div class="info__float-top info__button">Конференции</div>
+                <div class="info__float-right info__button">Личный чат</div>
+                <div class="info__float-left info__button">Совместная работа</div>
+            </div>
+        </div>
+        <div class="site">
+            <div class="site__text">
+                <h1>Vichat.TV</h1>
+            </div>
+        </div>
+        <header class="header">
+            <a href="https://vichat.tv">Vichat.TV</a>
+        </header>
+        <div class="main">
+            <div class="main__box-1">
+                <div class="main__body">
+                    <div class="main__title">
+                        <span>Создать <br> видеовстречу</span>
+                     </div>
+                     <div class="main__form">
+                        <input id="roomName" value="Vichat.TV" type="text">
+                        <button id="joinRoomButton" type="button" aria-label="" onclick="joinRoom()">Войти в комнату</button>
+                        <script>
+                            document.getElementById('roomName').onkeyup = (e) => {
+                                if (e.keyCode === 13) {
+                                    e.preventDefault();
+                                    joinRoom();
+                                }
+                            };
+                            function joinRoom() {
+                                let roomName = document.getElementById('roomName').value;
+                                window.location.href = '/join/' + roomName;
+                            }
+                        </script>
+                     </div>
+                </div>
+           </div>
+        </div>
+        <footer class="footer">
+            <div class="footer__body">
+                <div class="footer__nav">
+                    <ul>
+                        <li><a target="_blank" href="https://t.me/vichatv" >Инфо</a></li>
+                        <li><a target="_blank" href="https://t.me/viadminus" >Контакты</a></li>
+                        <li><a href="/privacy">Политика безопасности</a></li>
+                    </ul>
+                    <span>&copy; © 2022 Vichat.TV. Все права защищены.</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

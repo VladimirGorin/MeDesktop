@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnlyRussians | {{page_type}}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for( 'static', filename='css/style.css', v=1)}}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <ul class="header-ul row">
+                <li class="col-md-4"><a href="/">Главная</a></li>
+                <li class="col-md-4"><a href="/information">О нас</a></li>
+            </ul>
+        </div>
+        <div id="subscription">
+            {%for subscr in subscriptions%}
+                <div class="subscr">
+                    <h2>{{subscr[3]}}₽</h1>
+                    <h2>{{subscr[4]}}</h2>
+                    <p>{{subscr[2]}}</p>
+                    <a href="/following/{{profile_info['nickname']}}/{{subscr[0]}}">Подписаться</a>
+                </div>
+            {%endfor%}
+        </div>  
+        <div class="block container">
+            <div class="profile-info">
+                <ul class="profile-info-up row">
+                    <li class="col-md-2"><div class="profile-avatar"><img src="/static/images/{{profile_info['''id''']}}/avatar/{{profile_info['''id''']}}.jpg" alt=""></div></li>
+                    <li class="col-md-10">
+                        <ul calss="profile-info-name">
+                            <li><h2 style="font-size: 28px; text-align: left;">{{profile_info['name']}} {{profile_info['secondname']}}</h2></li>
+                            <li><h4 style="font-size: 28px; text-align: left;">@{{profile_info['nickname']}}</h4></li>
+                            <li><p>{{profile_info['description']}}</p></li>
+                            <li><ul><li>Followers: {{profile_info['followers']}}</li><li>Likes: {{profile_info['likes']}}</li></ul></li>
+                            {%if user['nickname'] in profile_info['subscriptions']%}
+                                <li>Вы подписаны!</li>
+                            {%else%}
+                                <li style="display: block;"><form action="#subscription"><input type="submit" value="Подписаться"></form></li>
+                            {%endif%}
+                        </ul>
+                    </li>
+                </ul>
+                <div class="line"></div>
+                <div class="profile-photo row">
+                    {% for post in posts %}
+                        {% if '.' in post[3] %}
+                            <div class="photo col-md-4">
+                                <img src="/static/images/{{profile_info['id']}}/photos/{{post[3]}}" alt="">
+                                {% if post[0] not in likes_posts%}
+                                    <a href="/getLike/{{post[0]}}">Like {{post[-2]}}</a>
+                                {%else%}
+                                    <a style="color: red;" href="/takeLike/{{post[0]}}">Like {{post[-2]}}</a>
+                                {%endif%}
+                                <p>{{post[2]}}</p>
+                            </div>
+                        {%endif%}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
