@@ -30,7 +30,7 @@ account_channel = "https://t.me/js_by_vladilen_chat"
 # Пользователи которым нужно отписать сообщение
 
 user_send_message_direct = {
-    'users': ["@wqewqeqaa", "@YHTYfaithe"]
+    'users': ["@Solevooii", "@YHTYfaithe"]
 }
 
 # Группы которым нужно отписать сообщение
